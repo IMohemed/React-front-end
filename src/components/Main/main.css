@@ -1,0 +1,155 @@
+.main {
+  width: 100%;
+}
+.main .secTitle .title {
+  position: relative;
+  width: -moz-max-content;
+  width: max-content;
+  color: hsl(240, 4%, 36%);
+  margin: 2rem 0;
+  z-index: 2;
+  font-weight: 600;
+  font-size: 30px;
+}
+.main .secContent {
+  justify-content: center;
+  gap: 1.5rem;
+}
+.main .secContent .singleDestination {
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  height: 100%;
+  display: grid;
+  row-gap: 10px;
+  border-radius: 15px;
+  align-items: center;
+  background: rgb(225, 225, 235);
+  box-shadow: 0 2px 4px rgba(133, 133, 135, 0.549);
+  overflow: hidden;
+}
+.main .secContent .singleDestination:hover {
+  background: rgb(225, 225, 255);
+  box-shadow: 1 4px 4px rgba(85, 85, 114, 0.549);
+  transition: 0.3s ease;
+}
+.main .secContent .singleDestination .imageDiv {
+  height: 180px;
+  width: 100%;
+  overflow: hidden;
+}
+.main .secContent .singleDestination .imageDiv img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 2s ease;
+}
+.main .secContent .singleDestination .imageDiv:hover img {
+  transform: scale(1.1);
+}
+.main .secContent .singleDestination .cardInfo {
+  padding: 0.5rem;
+}
+.main .secContent .singleDestination .cardInfo .title {
+  color: hsl(201, 33%, 16%);
+  font-size: 1.25rem;
+  text-align: center;
+}
+.main .secContent .singleDestination .desc {
+  text-align: center;
+  font-size: 14px;
+  color: hsl(240, 4%, 36%);
+  padding: 0 1rem;
+}
+.main .secContent .singleDestination .btn {
+  margin-top: 0.1rem;
+  margin-bottom: 1rem;
+  color: hsl(0, 0%, 100%);
+  font-weight: 600;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 50%;
+  align-items: center;
+  margin-left: 25%;
+}
+
+@media screen and (min-width: 500px) {
+  .title {
+    font-size: 1.5rem;
+  }
+  .title::after {
+    width: 155px !important;
+  }
+  .secContent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .secContent .singleDestination {
+    height: auto;
+  }
+}
+@media screen and (min-width: 840px) {
+  .main .destination {
+    margin: 4rem 6rem;
+    text-align: center;
+  }
+  .main .destination h1 {
+    font-size: 3rem;
+  }
+  .main .destination .first-des {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 4.5rem;
+  }
+  .main .destination .first-des .des-text {
+    width: 45%;
+    text-align: start;
+    font-size: 1.1rem;
+  }
+  .main .destination .first-des .des-text h2 {
+    padding-bottom: 1rem;
+  }
+  .main .destination .first-des-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 4.5rem;
+  }
+  .main .destination .first-des-reverse .des-text {
+    width: 45%;
+    text-align: start;
+    font-size: 1.1rem;
+  }
+  .main .destination .first-des-reverse .des-text h2 {
+    padding-bottom: 1rem;
+  }
+  .main .image {
+    position: relative;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    z-index: -99;
+  }
+  .main .image img {
+    width: 49%;
+    height: 350px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 6px;
+    box-shadow: -1px 1px 62px -18px rgba(0, 0, 0, 0.19);
+  }
+  .main .image img:nth-child(2) {
+    position: absolute;
+    top: -10%;
+    right: 0;
+  }
+  .main .secContent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .main .secContent .singleDestination {
+    height: auto;
+  }
+}/*# sourceMappingURL=main.css.map */

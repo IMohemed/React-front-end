@@ -1,0 +1,45 @@
+.partners {
+  width: 100%;
+  height: 70vh;
+  position: relative;
+}
+.partners img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.partners .partText {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+}
+.partners .partText h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  background: #fff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.partners .partText p {
+  font-size: 1.3rem;
+  color: #fff;
+  padding: 0.5rem 0 2rem 0;
+}
+
+@media screen and (max-width: 550px) {
+  .partners {
+    height: 100%;
+  }
+  .partners .partText h1 {
+    margin-top: 20%;
+    padding: 10px 20px;
+  }
+  .partners .partText p {
+    font-size: 1.1rem;
+    padding: 0 0 2rem 0;
+  }
+}/*# sourceMappingURL=partners.css.map */
