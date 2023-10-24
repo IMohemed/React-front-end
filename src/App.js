@@ -3,8 +3,8 @@ import './app.css';
  
 import Home1 from './routes/Home/home';
 // import Support from './routes/Support/support';
-// import Partners from './routes/Partners/partners';
-// import Products from './routes/Products/products';
+//import Partners from './routes/Partners/partners';
+import Products from './routes/Products/products';
 import { Route,Routes } from 'react-router-dom';
 
 
@@ -19,8 +19,9 @@ function App() {
           {/* <Route path='/partners' element={<Partners/>} />
           <Route path='/product' element={<Products/>} /> */}
         {/* </Routes> */}
-        <Home1/>
+        {/* <Home1/> */}
         {/* <Partners/> */}
+        <Products/>
         
       </>
     

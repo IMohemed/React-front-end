@@ -1,33 +1,120 @@
-.partners {
+.partners .overlay {
+  position: absolute;
+  height: 80vh;
   width: 100%;
-  height: 70vh;
+  top: 0;
+  bottom: 0;
+  background: rgb(48, 61, 66);
+  z-index: 1;
+  mix-blend-mode: hard-light;
+}
+.partners .imageContainer {
+  width: 100%;
+  height: 80vh;
   position: relative;
 }
-.partners img {
+.partners .imageContainer img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.partners .partText {
+.partners .imageContainer .partText {
   position: absolute;
   top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
+  color: hsl(0, 0%, 93%);
   text-align: center;
+  z-index: 100;
 }
-.partners .partText h1 {
+.partners .imageContainer .partText h1 {
   font-size: 3rem;
   font-weight: 600;
-  background: #fff;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
-.partners .partText p {
+.partners .imageContainer .partText p {
   font-size: 1.3rem;
-  color: #fff;
   padding: 0.5rem 0 2rem 0;
+}
+.partners .aboutContainer .partText {
+  margin: 4rem 6rem;
+}
+.partners .aboutContainer .partText .first {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 4.5rem;
+}
+.partners .aboutContainer .partText .first .contain {
+  width: 45%;
+  text-align: center;
+}
+.partners .aboutContainer .partText .first .contain h1 {
+  padding-bottom: 1rem;
+}
+.partners .aboutContainer .partText .first .contain p {
+  padding-bottom: 2rem;
+  font-size: 20px;
+}
+.partners .aboutContainer .partText .first img {
+  width: 50%;
+  height: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 6px;
+  box-shadow: -1px 1px 62px -18px rgba(0, 0, 0, 0.19);
+}
+.partners .aboutContainer .partText .second {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 4.5rem;
+}
+.partners .aboutContainer .partText .second .contain {
+  width: 45%;
+  text-align: center;
+}
+.partners .aboutContainer .partText .second .contain h1 {
+  padding-bottom: 1rem;
+}
+.partners .aboutContainer .partText .second .contain p {
+  padding-bottom: 2rem;
+  font-size: 20px;
+}
+.partners .aboutContainer .partText .second img {
+  width: 50%;
+  height: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 6px;
+  box-shadow: -1px 1px 62px -18px rgba(0, 0, 0, 0.19);
+}
+.partners .aboutContainer .partText .third {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 4.5rem;
+}
+.partners .aboutContainer .partText .third .contain {
+  width: 45%;
+  text-align: center;
+}
+.partners .aboutContainer .partText .third .contain h1 {
+  padding-bottom: 1rem;
+}
+.partners .aboutContainer .partText .third .contain p {
+  padding-bottom: 2rem;
+  font-size: 20px;
+}
+.partners .aboutContainer .partText .third img {
+  width: 50%;
+  height: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 6px;
+  box-shadow: -1px 1px 62px -18px rgba(0, 0, 0, 0.19);
 }
 
 @media screen and (max-width: 550px) {

@@ -1,6 +1,6 @@
 import React,{useEffect} from 'react';
 import './Footer.css';
-import img from '../../Assets/footer1.jpeg';
+import img from '../../Assets/foot.png';
 import{FiChevronRight, FiSend} from 'react-icons/fi';
 import { AiOutlineTwitter } from 'react-icons/ai';
 import { AiFillYoutube } from 'react-icons/ai';
@@ -15,6 +15,7 @@ const Footer = () => {
   },[])
   return (
     <section className='footer'>
+      <div className='overlay'></div>
       <div className='imageDiv'>
       <img src={img} alt='image'/>
       </div>

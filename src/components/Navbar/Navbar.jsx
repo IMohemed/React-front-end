@@ -33,7 +33,7 @@ const Navbar = () => {
                         <a href='#' className='navLink'>Support</a>
                     </li>
                     <li className='navItem'>
-                        <a href='#' className='navLink'>Partners</a>
+                        <a href='#' className='navLink'>About Us</a>
                     </li>
                     <button data-aos='fade-up' className='btn flex' type='submit'>
                    Login<FiLogIn className='icon'/>

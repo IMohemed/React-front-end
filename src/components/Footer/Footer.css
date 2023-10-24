@@ -8,6 +8,16 @@
   margin: auto;
   height: 100%;
 }
+.footer .overlay {
+  position: absolute;
+  height: 112.3vh;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  background: rgb(48, 61, 66);
+  z-index: 1;
+  mix-blend-mode: hard-light;
+}
 .footer .imageDiv {
   position: absolute;
   height: 100%;
