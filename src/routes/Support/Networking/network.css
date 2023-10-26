@@ -1,0 +1,172 @@
+.network {
+  width: 100%;
+}
+.network .overlay {
+  position: absolute;
+  height: 80vh;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  background: rgb(48, 61, 66);
+  z-index: 1;
+  mix-blend-mode: hard-light;
+}
+.network .imageContainer {
+  top: 0;
+  width: 100%;
+  height: 80vh;
+  position: relative;
+}
+.network .imageContainer img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.network .imageContainer .partText {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  color: hsl(0, 0%, 93%);
+  text-align: center;
+  z-index: 100;
+}
+.network .imageContainer .partText h1 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+.network .imageContainer .partText p {
+  font-size: 1.3rem;
+  padding: 0.5rem 0 2rem 0;
+}
+.network .secContent {
+  justify-content: center;
+  gap: 1.5rem;
+}
+.network .secContent .singleDestination {
+  margin-bottom: 5px;
+  border: 1px solid #ccc;
+  height: 100%;
+  display: grid;
+  row-gap: 10px;
+  border-radius: 15px;
+  align-items: center;
+  background: rgb(225, 225, 235);
+  box-shadow: 0 2px 4px rgba(133, 133, 135, 0.549);
+  overflow: hidden;
+  transition: 2s ease;
+}
+.network .secContent .singleDestination:hover {
+  background: rgb(225, 225, 255);
+  box-shadow: 1 4px 4px rgba(85, 85, 114, 0.549);
+  transition: 0.3s ease;
+}
+.network .secContent .singleDestination .imageDiv {
+  height: 180px;
+  width: 100%;
+  overflow: hidden;
+}
+.network .secContent .singleDestination .imageDiv img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 2s ease;
+}
+.network .secContent .singleDestination .imageDiv:hover img {
+  transform: scale(1.1);
+}
+.network .secContent .singleDestination .cardInfo {
+  padding: 0.5rem;
+}
+.network .secContent .singleDestination .cardInfo .title {
+  color: hsl(201, 33%, 16%);
+  font-size: 1.25rem;
+  text-align: center;
+}
+.network .secContent .singleDestination .desc {
+  text-align: center;
+  font-size: 14px;
+  color: hsl(240, 4%, 36%);
+  padding: 0 1rem;
+}
+.network .secContent .singleDestination .btn {
+  margin-top: 0.1rem;
+  margin-bottom: 1rem;
+  color: hsl(0, 0%, 100%);
+  font-weight: 600;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 50%;
+  align-items: center;
+  margin-left: 25%;
+}
+
+@media screen and (min-width: 840px) {
+  .network .destination {
+    margin: 4rem 6rem;
+    text-align: center;
+  }
+  .network .destination h1 {
+    font-size: 3rem;
+  }
+  .network .destination .first-des {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 4.5rem;
+  }
+  .network .destination .first-des .des-text {
+    width: 45%;
+    text-align: start;
+    font-size: 1.1rem;
+  }
+  .network .destination .first-des .des-text h2 {
+    padding-bottom: 1rem;
+  }
+  .network .destination .first-des-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 4.5rem;
+  }
+  .network .destination .first-des-reverse .des-text {
+    width: 45%;
+    text-align: start;
+    font-size: 1.1rem;
+  }
+  .network .destination .first-des-reverse .des-text h2 {
+    padding-bottom: 1rem;
+  }
+  .network .image {
+    position: relative;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    z-index: -99;
+  }
+  .network .image img {
+    width: 49%;
+    height: 350px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 6px;
+    box-shadow: -1px 1px 62px -18px rgba(0, 0, 0, 0.19);
+  }
+  .network .image img:nth-child(2) {
+    position: absolute;
+    top: -10%;
+    right: 0;
+  }
+  .network .secContent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 4rem 6rem;
+  }
+  .network .secContent .singleDestination {
+    height: auto;
+  }
+}/*# sourceMappingURL=network.css.map */

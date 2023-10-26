@@ -85,6 +85,31 @@
   .header .navBar .navItem .navLink:hover {
     color: hsl(199, 100%, 33%);
   }
+  .header .navBar .navItem .services-sub {
+    width: 6rem;
+    margin: 6px;
+    top: 77px;
+    display: none;
+    position: relative;
+    list-style: none;
+    text-align: start;
+  }
+  .header .navBar .navItem .services-sub .submenu {
+    cursor: pointer;
+    background: hsl(0, 5%, 83%);
+  }
+  .header .navBar .navItem .services-sub .navLink1 {
+    color: hsl(240, 4%, 36%);
+    font-size: 0.9rem;
+    font-weight: 600;
+    display: block;
+    width: 50%;
+    height: 100%;
+    padding: 16px;
+  }
+  .header .navBar .navItem:hover > .services-sub {
+    display: block;
+  }
 }
 @media screen and (min-width: 960px) {
   .header .navBar .navLists .navItem {

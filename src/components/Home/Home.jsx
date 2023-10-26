@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, {useEffect,useRef} from 'react';
 import './home.css';
 import casino2 from '../../Assets/casino.mp4';
 import Aos from 'aos';
@@ -6,7 +6,7 @@ import 'aos/dist/aos.css';
 import Typewriter from "typewriter-effect";
 //import Typed from 'typed.js';
 const Home = () => {
-  const el = React.useRef(null);
+  const el = useRef(null);
   useEffect(() => {
     Aos.init({duration:2000})
   },[])

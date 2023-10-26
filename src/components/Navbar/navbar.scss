@@ -41,8 +41,14 @@
                     color: hsl(240, 4%, 36%);
                     font-size: .9rem;
                     font-weight: 600;
+
+                    
                 }
+                
+
             }
+            
+
 
             
         }
@@ -58,10 +64,12 @@
         }
         
         }
+        
         .activeNavbar{
             top: 7rem;
         }
     }
+    
 
     .toggleNavbar{
         .icon{
@@ -88,7 +96,7 @@
             align-items: center;
             justify-content: center;
             flex-direction: row;
-
+            
             .navItem{
                 .navLink{
                     color: hsl(240, 4%, 36%);
@@ -98,11 +106,49 @@
 
                     &:hover{
                         color: hsl(199,100%,33%);
+                        
+                    }
+                    
+                }
+                .services-sub{
+                    width: 6rem;
+                    margin: 6px;
+                    //left: 0;
+                    top: 77px;
+                    display: none;
+                    position: relative;
+                    list-style: none;
+                    text-align: start;
+                    .submenu{
+                        cursor: pointer;
+                        background: hsl(0, 5%, 83%);
+                        
+                    }
+                    
+                    .navLink1{
+                        color: hsl(240, 4%, 36%);
+                        font-size: .9rem;
+                        font-weight: 600;
+                        display:block ;
+                        width: 50%;
+                        height: 100%;
+                        padding: 16px;
+                        
+                    }
+                }
+                &:hover {
+                    >.services-sub{
+                        display: block;
                     }
                 }
             }
+            
          }
-    }
+        }
+         
+    
+        
+    
     
 }
 

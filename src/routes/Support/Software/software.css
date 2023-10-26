@@ -1,0 +1,155 @@
+.software .overlay {
+  position: absolute;
+  height: 80vh;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  background: rgb(48, 61, 66);
+  z-index: 1;
+  mix-blend-mode: hard-light;
+}
+.software .imageContainer {
+  top: 0;
+  width: 100%;
+  height: 80vh;
+  position: relative;
+}
+.software .imageContainer img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.software .imageContainer .partText {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  color: hsl(0, 0%, 93%);
+  text-align: center;
+  z-index: 100;
+}
+.software .imageContainer .partText h1 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+.software .imageContainer .partText p {
+  font-size: 1.3rem;
+  padding: 0.5rem 0 2rem 0;
+}
+.software .aboutContainer .partText {
+  margin: 4rem 6rem;
+}
+.software .aboutContainer .partText .first {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 4.5rem;
+}
+.software .aboutContainer .partText .first .contain {
+  width: 45%;
+  text-align: center;
+}
+.software .aboutContainer .partText .first .contain h1 {
+  padding-bottom: 1rem;
+}
+.software .aboutContainer .partText .first .contain p {
+  padding-bottom: 2rem;
+  font-size: 20px;
+}
+.software .aboutContainer .partText .first .contain .btn {
+  margin-top: 0.1rem;
+  margin-bottom: 1rem;
+  color: hsl(0, 0%, 100%);
+  font-weight: 600;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 40%;
+  align-items: center;
+  margin-left: 30%;
+  padding: 10px 0px;
+}
+.software .aboutContainer .partText .first img {
+  width: 50%;
+  height: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 6px;
+  box-shadow: -1px 1px 62px -18px rgba(0, 0, 0, 0.19);
+}
+.software .aboutContainer .partText .second {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 4.5rem;
+}
+.software .aboutContainer .partText .second .contain {
+  width: 45%;
+  text-align: center;
+}
+.software .aboutContainer .partText .second .contain h1 {
+  padding-bottom: 1rem;
+}
+.software .aboutContainer .partText .second .contain p {
+  padding-bottom: 2rem;
+  font-size: 20px;
+}
+.software .aboutContainer .partText .second .contain .btn {
+  margin-top: 0.1rem;
+  margin-bottom: 1rem;
+  color: hsl(0, 0%, 100%);
+  font-weight: 600;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 40%;
+  align-items: center;
+  margin-left: 30%;
+  padding: 10px 0px;
+}
+.software .aboutContainer .partText .second img {
+  width: 50%;
+  height: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 6px;
+  box-shadow: -1px 1px 62px -18px rgba(0, 0, 0, 0.19);
+}
+.software .aboutContainer .partText .third {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 4.5rem;
+}
+.software .aboutContainer .partText .third .contain {
+  width: 45%;
+  text-align: center;
+}
+.software .aboutContainer .partText .third .contain h1 {
+  padding-bottom: 1rem;
+}
+.software .aboutContainer .partText .third .contain p {
+  padding-bottom: 2rem;
+  font-size: 20px;
+}
+.software .aboutContainer .partText .third .contain .btn {
+  margin-top: 0.1rem;
+  margin-bottom: 1rem;
+  color: hsl(0, 0%, 100%);
+  font-weight: 600;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 40%;
+  align-items: center;
+  margin-left: 30%;
+  padding: 10px 0px;
+}
+.software .aboutContainer .partText .third img {
+  width: 50%;
+  height: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 6px;
+  box-shadow: -1px 1px 62px -18px rgba(0, 0, 0, 0.19);
+}/*# sourceMappingURL=software.css.map */

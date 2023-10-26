@@ -1,6 +1,6 @@
 import React,{useEffect} from 'react';
 import './Footer.css';
-import img from '../../Assets/foot.png';
+import img1 from '../../Assets/foot.png';
 import{FiChevronRight, FiSend} from 'react-icons/fi';
 import { AiOutlineTwitter } from 'react-icons/ai';
 import { AiFillYoutube } from 'react-icons/ai';
@@ -17,7 +17,7 @@ const Footer = () => {
     <section className='footer'>
       <div className='overlay'></div>
       <div className='imageDiv'>
-      <img src={img} alt='image'/>
+      <img src={img1} alt='imag'/>
       </div>
       <div className='secContent container'>
         <div className='contactDiv flex'>
@@ -36,9 +36,9 @@ const Footer = () => {
 
           <div className='footerIntro flex'>
             <div className='logoDiv'>
-              <a href='#' className='logo flex'>
+              {/* <a href='#' className='logo flex'> */}
                 Pacific Code
-              </a>
+              {/* </a> */}
             </div>
             <div  className='fooeterParagraph'>
               Lorem ipsum dolor sit amet consectetur adipisicing 

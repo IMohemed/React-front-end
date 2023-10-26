@@ -1,4 +1,4 @@
-import React,{useEffect} from 'react';
+import React,{useEffect,useState} from 'react';
 import './main.css';
 import img1 from '../../Assets/casino.jpeg';
 import img2 from '../../Assets/network.jpeg';
@@ -8,6 +8,7 @@ import img5 from '../../Assets/inventory.jpeg';
 import img6 from '../../Assets/ERP.jpeg';
 import img7 from '../../Assets/robo.jpg';
 import img8 from '../../Assets/sdevelop.jpeg';
+import Software from '../../routes/Support/Software/Software';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 const Data=[
@@ -16,39 +17,46 @@ const Data=[
     title:"Casino Management",
     image:img1,
     description:"A casino is a facility or establishment where various forms of gambling activities take place.",
+    cv:<Software/>
   },
   {
     id:2,
     title:"Network Sollution",
     image:img2,
     description:"As a Company we provide you the best sollution for your problems on networking.",
+    cv:<Software/>
   },
   {
     id:3,
     title:"Software Sollution",
     image:img3,
     description:"As a Company we provide you the best sollution for your problem with our best experienced team",
+    cv:<Software/>
   },
   {
     id:4,
     title:"Survilience Sollution",
     image:img4,
     description:"A casino is a facility or establishment where various forms of gambling activities take place.",
+    cv:<Software/>
   },
   {
     id:5,
     title:"Inventory management",
     image:img5,
     description:"Creating applications with latest technology and can be portable to any type of devices",
+    cv:<Software/>
   },
   {
     id:6,
     title:"ERP Management System",
     image:img6,
     description:"Creating a network of applications",
+    cv:<Software/>
   }
 ]
 const Main = () => {
+  
   useEffect(() => {
     Aos.init({duration:2000})
   },[])
@@ -74,8 +82,8 @@ const Main = () => {
             </p>
           </div>
           <div className='image'>
-            <img src={img7} alt='image'/>
-            <img src={img8} alt='image'/>
+            <img src={img7} alt='imge'/>
+            <img src={img8} alt='imge'/>
           </div>
         </div>
         <div data-aos='fade-up' className='first-des-reverse'>
@@ -94,8 +102,8 @@ const Main = () => {
             </p>
           </div>
           <div className='image'>
-            <img src={img7} alt='image'/>
-            <img src={img8} alt='image'/>
+            <img src={img7} alt='imge'/>
+            <img src={img8} alt='imge'/>
           </div>
         </div>
       </div>
@@ -104,7 +112,7 @@ const Main = () => {
       </div>
       <div className='secContent Grid'>
         {
-          Data.map(({id,title,image,description}) => {
+          Data.map(({id,title,image,description,cv}) => {
             return(
               
               <div data-aos='fade-up' key={id} className="singleDestination">
@@ -117,7 +125,7 @@ const Main = () => {
                 <div className='desc'>
                   <p>{description}</p>
                 </div>
-                <button className='btn flex'>
+                <button onClick={() => cv}  className='btn flex'>
                   LEARN MORE
                 </button>  
               </div>

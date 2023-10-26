@@ -6,7 +6,7 @@ import Aos from 'aos';
 import 'aos/dist/aos.css';
 import './support.css';
 
-function Support(){
+function Casino(){
     useEffect(() => {
         Aos.init({duration:2000})
       },[])
@@ -18,7 +18,7 @@ function Support(){
           <div className="imageContainer">
              <img alt="imge" src={img}/>
              <div className="partText">
-                <h1>Our Survice</h1>
+                <h1>Casino Management</h1>
                 <p>We Provide best service for our customers</p>
              </div>
           </div>
@@ -39,4 +39,4 @@ function Support(){
 
 }
 
-export default Support;
+export default Casino;

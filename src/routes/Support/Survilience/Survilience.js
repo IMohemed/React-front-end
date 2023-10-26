@@ -18,7 +18,7 @@ function Support(){
           <div className="imageContainer">
              <img alt="imge" src={img}/>
              <div className="partText">
-                <h1>Our Survice</h1>
+                <h1>Survilience Management</h1>
                 <p>We Provide best service for our customers</p>
              </div>
           </div>

@@ -19,7 +19,7 @@ function Partners(){
          <div className="partners">
          <div className='overlay'></div>
            <div className="imageContainer">
-             <img alt="image" src={img}/>
+             <img alt="imge" src={img}/>
              <div className="partText">
                 <h1>About Us</h1>
                 <p>We Provide best service for our customers customers</p>
