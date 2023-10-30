@@ -9,6 +9,7 @@ import img6 from '../../Assets/ERP.jpeg';
 import img7 from '../../Assets/robo.jpg';
 import img8 from '../../Assets/sdevelop.jpeg';
 import Software from '../../routes/Support/Software/Software';
+import { useNavigate } from 'react-router-dom';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 const Data=[
@@ -17,42 +18,42 @@ const Data=[
     title:"Casino Management",
     image:img1,
     description:"A casino is a facility or establishment where various forms of gambling activities take place.",
-    cv:<Software/>
+    cv:'/casino'
   },
   {
     id:2,
     title:"Network Sollution",
     image:img2,
     description:"As a Company we provide you the best sollution for your problems on networking.",
-    cv:<Software/>
+    cv:'/network'
   },
   {
     id:3,
     title:"Software Sollution",
     image:img3,
     description:"As a Company we provide you the best sollution for your problem with our best experienced team",
-    cv:<Software/>
+    cv:'/software'
   },
   {
     id:4,
     title:"Survilience Sollution",
     image:img4,
     description:"A casino is a facility or establishment where various forms of gambling activities take place.",
-    cv:<Software/>
+    cv:'/survilience'
   },
   {
     id:5,
     title:"Inventory management",
     image:img5,
     description:"Creating applications with latest technology and can be portable to any type of devices",
-    cv:<Software/>
+    cv:'/inventory'
   },
   {
     id:6,
     title:"ERP Management System",
     image:img6,
     description:"Creating a network of applications",
-    cv:<Software/>
+    cv:'/erp'
   }
 ]
 const Main = () => {
@@ -60,6 +61,7 @@ const Main = () => {
   useEffect(() => {
     Aos.init({duration:2000})
   },[])
+  const navigate = useNavigate();
   return (
     <section className='main container section'>
       <div data-aos='fade-up' className='destination'>
@@ -125,7 +127,7 @@ const Main = () => {
                 <div className='desc'>
                   <p>{description}</p>
                 </div>
-                <button onClick={() => cv}  className='btn flex'>
+                <button onClick={() => navigate(cv)}  className='btn flex'>
                   LEARN MORE
                 </button>  
               </div>

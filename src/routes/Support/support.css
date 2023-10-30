@@ -37,4 +37,37 @@
 .service .imageContainer .partText p {
   font-size: 1.3rem;
   padding: 0.5rem 0 2rem 0;
+}
+.service .content {
+  margin: 8rem 8rem;
+}
+.service .content .contSec {
+  display: flex;
+  flex-direction: row-reverse;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 80px;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 4.5rem;
+}
+.service .content .contSec img {
+  width: 90%;
+  height: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 6px;
+  box-shadow: -1px 1px 62px -18px rgba(0, 0, 0, 0.19);
+}
+.service .content .contSec .contContainer {
+  margin-top: 1rem;
+  width: 60%;
+  text-align: center;
+  padding-left: 5rem;
+}
+.service .content .contSec .contContainer h1 {
+  padding-bottom: 1rem;
+}
+.service .content .contSec .contContainer p {
+  padding-bottom: 2rem;
+  font-size: 20px;
 }/*# sourceMappingURL=support.css.map */

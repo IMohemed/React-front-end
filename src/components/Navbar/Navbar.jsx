@@ -33,18 +33,7 @@ const Navbar = () => {
                         <Link to='/' className='navLink'>Home</Link>
                     </li>
                     <li  className='navItem'>
-                    <Link   className='navLink'>Services</Link>
-                    <ul className= 'services-sub' >
-                        <li className='submenu'>
-                            <Link to='/software'  className='navLink1'>Software</Link>
-                        </li>
-                        <li className='submenu'>
-                            <Link to='/network'  className='navLink1'>Network</Link>
-                        </li>
-                        <li className='submenu'>
-                            <Link to='/survilience'  className='navLink1'>Survilience</Link>
-                        </li>
-                    </ul>
+                    <Link  to='/service' className='navLink'>Services</Link>
                     </li>
                     <li className='navItem'>
                     <Link to='/contact' className='navLink'>Contact</Link>

@@ -1,6 +1,6 @@
 import React, {useEffect,useRef} from 'react';
 import './home.css';
-import casino2 from '../../Assets/casino.mp4';
+import casino2 from '../../Assets/tech.mp4';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import Typewriter from "typewriter-effect";
@@ -25,7 +25,7 @@ const Home = () => {
   return (
     <section className='home'>
       <div className='overlay'></div>
-      {/* <video src={casino2} muted   typeof='video/mp4'></video> */}
+      <video src={casino2} muted  autoplay loop typeof='video/mp4'></video>
       <div className='homeContent container'>
         <div className='textDiv'>
           <span data-aos='fade-up' className='smallText'>
