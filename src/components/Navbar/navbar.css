@@ -9,8 +9,11 @@
   z-index: 1000;
   box-shadow: 0 2px 4px rgba(2, 15, 29, 0.904);
 }
-.header .logo {
+.header .logodiv {
   color: hsl(201, 33%, 16%);
+}
+.header .logodiv h1 span {
+  color: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
 }
 @media screen and (max-width: 768px) {
   .header .navBar {
@@ -76,11 +79,15 @@
     justify-content: center;
     flex-direction: row;
   }
+  .header .navBar .navItem {
+    display: inline-block;
+  }
   .header .navBar .navItem .navLink {
     color: hsl(240, 4%, 36%);
     padding: 0 0.45rem;
     font-size: 0.9rem;
     font-weight: 500;
+    display: block;
   }
   .header .navBar .navItem .navLink:hover {
     color: hsl(199, 100%, 33%);

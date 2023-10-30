@@ -1,4 +1,4 @@
-.service{
+.survilience{
     .overlay{
         position: absolute;
         height: 80vh;
@@ -44,4 +44,39 @@
             //color: #fff;
             padding: 0.5rem 0 2rem 0;
         }
-    }}}
+    }
+}
+.content{
+    margin: 4rem 6rem;
+    .contSec{
+    display: grid;
+    grid-template-columns: .9fr 1.1fr;
+    //gap: 0px;
+    align-items: start;
+    justify-content: space-between;
+    margin-top: 4.5rem;
+    img{
+        width: 70%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 6px;
+    box-shadow: -1px 1px 62px -18px rgba(0,0,0,0.19);
+    }
+    .contContainer{
+        margin-top: 1rem;
+        width: 100%;
+        text-align: start;
+        
+        h1{
+            padding-bottom: 1rem;
+        }
+        p{
+            padding-bottom: 2rem;
+            font-size: 20px;
+        }
+
+    }
+
+}
+}
+}

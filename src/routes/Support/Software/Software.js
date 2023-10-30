@@ -5,6 +5,7 @@ import img2 from '../../../Assets/mobile.jpeg';
 import img3 from '../../../Assets/pos.jpeg';
 import Navbar from '../../../components/Navbar/Navbar';
 import Footer from '../../../components/Footer/Footer';
+import { useNavigate } from "react-router-dom";
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import './software.css';
@@ -13,6 +14,7 @@ function Software(){
     useEffect(() => {
         Aos.init({duration:2000})
       },[])
+    const navigate = useNavigate();
     return(
         <>
           <Navbar/>
@@ -36,7 +38,7 @@ function Software(){
                     the product for you,
                      according to your wishes of how your working environment should be.
                 </p>
-                <button className='btn flex'>
+                <button onClick={() => navigate('/software/hotel')} className='btn flex'>
                   LEARN MORE
                 </button> 
                 </div>

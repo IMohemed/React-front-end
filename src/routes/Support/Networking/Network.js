@@ -64,7 +64,7 @@ function Network(){
                 <p>We Provide best service for our customers</p>
              </div>
           </div>
-          <div className='secContent Grid'>
+          <div className='secContent Grid section container'>
         {
           Data.map(({id,title,image,description}) => {
             return(

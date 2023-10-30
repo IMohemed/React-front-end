@@ -23,7 +23,7 @@ const Navbar = () => {
         <header className='header flex'>
             <div className='logodiv'>
                 {/* <a href='#' className='logo flex'> */}
-                    <h1>Pacific Code</h1>
+                    <h1>Pacific <span>Code</span> </h1>
                 {/* </a> */}
             </div>
             <div className={active}>
@@ -40,6 +40,9 @@ const Navbar = () => {
                         </li>
                         <li className='submenu'>
                             <Link to='/network'  className='navLink1'>Network</Link>
+                        </li>
+                        <li className='submenu'>
+                            <Link to='/survilience'  className='navLink1'>Survilience</Link>
                         </li>
                     </ul>
                     </li>
