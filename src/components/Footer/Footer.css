@@ -83,7 +83,7 @@
   padding: 1rem 1rem 0rem;
   gap: 2rem;
   border-radius: 0rem;
-  background: rgb(225, 225, 235);
+  background: black;
   width: 100%;
   height: 35vh;
   justify-content: center;
@@ -100,7 +100,7 @@
   padding-top: 2rem;
 }
 .footer .secContent .footerCard .footerIntro .logoDiv .logo {
-  color: hsl(201, 33%, 16%);
+  color: antiquewhite;
   font-weight: 600;
   display: block;
   font-size: 19px;
@@ -110,9 +110,9 @@
   color: hsl(199, 100%, 33%);
   margin-right: 10px;
 }
-.footer .secContent .footerCard .footerIntro .footerParagraph {
+.footer .secContent .footerCard .footerIntro .footerParagraph p {
   font-size: 15px;
-  color: hsl(240, 4%, 36%);
+  color: antiquewhite;
   width: 90%;
 }
 .footer .secContent .footerCard .footerIntro .footerSocials {
@@ -120,7 +120,7 @@
        column-gap: 0.5rem;
 }
 .footer .secContent .footerCard .footerIntro .footerSocials .icon {
-  color: hsl(201, 33%, 16%);
+  color: antiquewhite;
   font-size: 20px;
 }
 .footer .secContent .footerCard .footerIntro .footerSocials .icon:hover {
@@ -137,17 +137,17 @@
 .footer .secContent .footerCard .footerLinks .linkGroup .groupTitle {
   display: block;
   font-weight: 600;
-  color: hsl(201, 33%, 16%);
+  color: antiquewhite;
   margin-bottom: 0.5rem;
 }
 .footer .secContent .footerCard .footerLinks .linkGroup .footerList {
   font-size: 15px;
-  color: hsl(240, 4%, 36%);
+  color: antiquewhite;
   transition: 0.3s ease-in-out;
 }
 .footer .secContent .footerCard .footerLinks .linkGroup .footerList .icon {
   font-size: 15px;
-  color: rgb(190, 190, 190);
+  color: antiquewhite;
 }
 .footer .secContent .footerCard .footerLinks .linkGroup .footerList:hover {
   color: hsl(199, 100%, 33%);
@@ -158,7 +158,7 @@
 }
 .footer .secContent .footerCard .footerLinks .linkGroup .footerList1 {
   font-size: 15px;
-  color: hsl(240, 4%, 36%);
+  color: antiquewhite;
   transition: 0.3s ease-in-out;
   margin-bottom: 7px;
 }
@@ -168,7 +168,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background: hsl(187, 85%, 43%);
+  background: hsl(189, 15%, 25%);
   padding: 0.5rem 2rem;
 }
 .footer .secContent .footerCard .footerDiv small {

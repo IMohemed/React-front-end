@@ -110,7 +110,8 @@
             //margin-top: 1rem;
             gap: 2rem;
             border-radius: 0rem;
-            background: rgb(225,225,235);
+            //background: rgb(225,225,235);
+            background: black;
             width: 100%;
             height: 35vh;
             justify-content: center;
@@ -130,7 +131,8 @@
 
             .logoDiv{
                 .logo{
-                    color: hsl(201,33%,16%);
+                    //color: hsl(201,33%,16%);
+                    color: antiquewhite;
                     font-weight: 600;
                     display: block;
                     font-size: 19px;
@@ -144,16 +146,19 @@
             }
 
             .footerParagraph{
-                font-size: 15px;
-                color: hsl(240,4%,36%);
-                 width: 90%;
+                p{font-size: 15px;
+                //color: hsl(240,4%,36%);
+                color: antiquewhite;
+                 width: 90%;}
             }
 
             .footerSocials{
                 column-gap: .5rem;
                 
                 .icon{
-                    color: hsl(201,33%,16%);
+                    //color: hsl(201,33%,16%);
+                    color: antiquewhite;
+                    //background: color( red green blue);
                     font-size: 20px;
 
                     &:hover{
@@ -175,19 +180,22 @@
                   .groupTitle{
                     display: block;
                     font-weight: 600;
-                    color: hsl(201,33%,16%);
+                    //color: hsl(201,33%,16%);
+                    color: antiquewhite;
                     margin-bottom: .5rem;
                   }
                   
                   
                   .footerList{
                     font-size: 15px;
-                    color: hsl(240,4%,36%);
+                    //color: hsl(240,4%,36%);
+                    color: antiquewhite;
                     transition: .3s ease-in-out;
 
                     .icon{
                         font-size: 15px;
-                        color: rgb(190,190,190);
+                        //color: rgb(190,190,190);
+                        color: antiquewhite;
                     }
 
                     &:hover{
@@ -201,7 +209,8 @@
                   }
                   .footerList1{
                     font-size: 15px;
-                    color: hsl(240,4%,36%);
+                    //color: hsl(240,4%,36%);
+                    color: antiquewhite;
                     transition: .3s ease-in-out;
                     margin-bottom: 7px;
 
@@ -215,7 +224,8 @@
                 bottom: 0;
                 left: 0;
                 right: 0;
-                background: hsl(187,85%,43%);
+                //background: hsl(187,85%,43%);
+                background: hsl(189, 15%, 25%);
                 padding: .5rem 2rem;
 
                 small{
