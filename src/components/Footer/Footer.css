@@ -8,16 +8,6 @@
   margin: auto;
   height: 100%;
 }
-.footer .overlay {
-  position: absolute;
-  height: 112.3vh;
-  width: 100%;
-  top: 0;
-  bottom: 0;
-  background: rgb(48, 61, 66);
-  z-index: 1;
-  mix-blend-mode: hard-light;
-}
 .footer .imageDiv {
   position: absolute;
   height: 100%;
@@ -89,49 +79,55 @@
   font-size: 18px;
 }
 .footer .secContent .footerCard {
-  position: relative;
-  padding: 1rem 1rem 4rem;
+  position: absolute;
+  padding: 1rem 1rem 0rem;
   gap: 2rem;
-  border-radius: 1rem;
-  background: rgb(240, 240, 246);
+  border-radius: 0rem;
+  background: rgb(225, 225, 235);
   width: 100%;
+  height: 35vh;
   justify-content: center;
   flex-direction: column;
   align-items: flex-start;
   overflow: hidden;
 }
 .footer .secContent .footerCard .footerIntro {
-  flex-basis: 50%;
+  flex-basis: 100%;
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
   row-gap: 0.5rem;
+  padding-top: 2rem;
 }
-.footer .secContent .footerCard .logoDiv .logo {
+.footer .secContent .footerCard .footerIntro .logoDiv .logo {
   color: hsl(201, 33%, 16%);
   font-weight: 600;
+  display: block;
+  font-size: 19px;
 }
-.footer .secContent .footerCard .logoDiv .logo .icon {
+.footer .secContent .footerCard .footerIntro .logoDiv .logo .icon {
   font-size: 25px;
   color: hsl(199, 100%, 33%);
   margin-right: 10px;
 }
-.footer .secContent .footerCard .footerParagraph {
-  font-size: 13px;
+.footer .secContent .footerCard .footerIntro .footerParagraph {
+  font-size: 15px;
   color: hsl(240, 4%, 36%);
+  width: 90%;
 }
-.footer .secContent .footerCard .footerSocials {
+.footer .secContent .footerCard .footerIntro .footerSocials {
   -moz-column-gap: 0.5rem;
        column-gap: 0.5rem;
 }
-.footer .secContent .footerCard .footerSocials .icon {
+.footer .secContent .footerCard .footerIntro .footerSocials .icon {
   color: hsl(201, 33%, 16%);
   font-size: 20px;
 }
-.footer .secContent .footerCard .footerSocials .icon:hover {
+.footer .secContent .footerCard .footerIntro .footerSocials .icon:hover {
   color: hsl(199, 100%, 33%);
 }
 .footer .secContent .footerCard .footerLinks {
+  padding-top: 1rem;
   flex-basis: 50%;
   width: 100%;
   gap: 1rem;
@@ -227,8 +223,8 @@
 }
 @media screen and (min-width: 1024px) {
   .footer .secContent .footerCard {
-    padding: 3rem 1rem;
-    margin-top: 150px;
+    padding: 0rem 1rem;
+    margin-top: 100px;
   }
   .footer .secContent .footerCard .footerIntro .footerParagraph {
     font-size: 15px;

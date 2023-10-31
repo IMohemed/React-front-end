@@ -15,12 +15,14 @@ const Footer = () => {
   },[])
   return (
     <section className='footer'>
-      <div className='overlay'></div>
-      <div className='imageDiv'>
+      {/* <div className='overlay'></div> */}
+      {/* <div className='imageDiv'>
       <img src={img1} alt='imag'/>
-      </div>
+      </div> */}
       <div className='secContent container'>
-        <div className='contactDiv flex'>
+        
+        <div className='footerCard flex'>
+        {/* <div className='contactDiv flex'>
           <div  className='text'>
             <small>KEEP IN TOUCH</small>
             <h2>Join with Us</h2>
@@ -31,21 +33,21 @@ const Footer = () => {
               SEND<FiSend className='icon'/>
             </button>
           </div>
-        </div>
-        <div className='footerCard flex'>
-
+        </div> */}
           <div className='footerIntro flex'>
             <div className='logoDiv'>
-              {/* <a href='#' className='logo flex'> */}
+              <h1 className='logo flex'> 
                 Pacific Code
-              {/* </a> */}
+                </h1>
             </div>
-            <div  className='fooeterParagraph'>
+            <div  className='footerParagraph'>
+              <p>
               Lorem ipsum dolor sit amet consectetur adipisicing 
               elit. Perspiciatis laudantium hic doloremque 
               similique id, voluptate error ab architecto 
               quia et rerum aliquam in quasi blanditiis nam, 
               porro accusantium. Ea, unde!
+              </p>
             </div>
             <div  className='footerSocials'>
               <AiFillFacebook className='icon'/>

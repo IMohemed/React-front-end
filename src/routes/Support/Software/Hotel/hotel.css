@@ -1,16 +1,29 @@
 .hotel {
   width: 100%;
 }
-.hotel h1 {
+.hotel .contain h1 {
   color: hsl(201, 33%, 16%);
   margin-top: 10px;
   text-align: center;
 }
-.hotel .image {
+.hotel .contain .image {
   margin-top: 20px;
   box-shadow: -1px 1px 62px -18px rgba(0, 0, 0, 0.19);
 }
-.hotel .text {
+.hotel .contain .text {
   margin-top: 1rem;
   font-size: 20px;
+}
+.hotel .mainCon .secTitle {
+  margin: 2rem 0;
+}
+.hotel .mainCon .secTitle .title {
+  position: relative;
+  width: -moz-max-content;
+  width: max-content;
+  color: hsl(240, 4%, 36%);
+  margin: 2rem 0;
+  z-index: 2;
+  font-weight: 600;
+  font-size: 30px;
 }/*# sourceMappingURL=hotel.css.map */
