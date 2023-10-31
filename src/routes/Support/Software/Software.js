@@ -54,7 +54,7 @@ function Software(){
                      and open for any suggestions or improvements that
                      can be made as well as for suitable upgrades for an implemented mobile app. to
                 </p>
-                <button className='btn flex'>
+                <button onClick={() => navigate('/software/mobile')} className='btn flex'>
                   LEARN MORE
                 </button> 
                 </div>
@@ -69,7 +69,7 @@ function Software(){
                      to be the only 
                     POS system with the most number of features available at the point of sales.
                 </p>
-                <button className='btn flex'>
+                <button onClick={() => navigate('/software/pos')} className='btn flex'>
                   LEARN MORE
                 </button> 
                 </div>

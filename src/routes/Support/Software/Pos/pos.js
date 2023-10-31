@@ -1,38 +1,38 @@
 import React,{useEffect} from "react";
 //import img from '../../../../Assets/service.jpeg';
-import img1 from '../../../../Assets/mad.jpeg';
+import img1 from '../../../../Assets/pos1.jpeg';
 //import img2 from '../../../../Assets/mobile.jpeg';
 //import img3 from '../../../../Assets/pos.jpeg';
 import Navbar from '../../../../components/Navbar/Navbar';
 import Footer from '../../../../components/Footer/Footer';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
-import './mobile.css';
+import './pos.css';
 
-function Mobile(){
+function Pos(){
     useEffect(() => {
         Aos.init({duration:2000})
       },[])
     return(
         <>
           <Navbar/>
-          <div className="mobile container section">
+          <div className="poss container section">
             <div className="contain">
-              <h1>Mobile App Development</h1>
+              <h1>Point of Sale Software System</h1>
               <div data-aos='fade-up' className="image">
                 <img src={img1} alt=""/>
               </div>
               <div className="text">
                 <p data-aos='fade-up'>
-                In 2015, we expanded our horizons stepping up into mobile application developmant which has now become one of the most popular facet inthe software industry.
-                within the year ,we were able to win theconfidence of 5 strong and reliable customersand were capable of delivering a set of successful mobile
-                applicationsthat satisfired thier needs.
+                Hotel management refers to the efficient operation and administration of a hotel or a similar establishment to ensure
+                 a seamless and satisfying experience for guests. It encompasses a wide range of tasks, including guest services,
+                 staff management, facility maintenance, and financial management. Here's a detailed description of hotel management
                  <br/><br/>
-                 The mobile applications have been developed solely by the creative minds of our incredibly talented team and they are availble and open for any 
-                 suggestions or improvement that can be made as well as for suitable upgradesfor an implemented mobile app.
+                 2015 has undoubtedl been a busy year in providing the best software Sollution for the hotel industry.For managing Hotels 
+                 and Restuarents we have introduced a customized software system for the convinience of our valuable customers.
                  <br/><br/>
-                 Even if the client wants an update for the application ,they are more than welcoe to craft the proposals and their wish will be our command,for any level of modification
-                 that is requested
+                 Within a single year of processing this product, wehave been able to score an impressive 25 important clients and among them are Ransara, In and Out, Hangout,
+                 WhiteHouse,Milano ,Little Hut, and Hands Dreams.
                  <br/><br/>
                  The software is specialized for these of Hotels and restuarents, and we ,the dedicated team at OnimtaIT, are willing to customize the
                  product for you ,according to your wishes of how your working environment should be.Our expertise will provide you 
@@ -48,4 +48,4 @@ function Mobile(){
 
 }
 
-export default Mobile;
+export default Pos;

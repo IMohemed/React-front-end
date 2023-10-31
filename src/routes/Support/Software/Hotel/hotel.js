@@ -1,13 +1,83 @@
 import React,{useEffect} from "react";
-//import img from '../../../../Assets/service.jpeg';
 import img1 from '../../../../Assets/hotel.jpeg';
-//import img2 from '../../../../Assets/mobile.jpeg';
-//import img3 from '../../../../Assets/pos.jpeg';
+import img2 from '../../../../Assets/hotel.jpeg';
+import img3 from '../../../../Assets/hotel.jpeg';
+import img4 from '../../../../Assets/hotel.jpeg';
+import img5 from '../../../../Assets/hotel.jpeg';
+import img6 from '../../../../Assets/hotel.jpeg';
+import Card from '@mui/material/Card';
+import Grid from '@mui/material/Grid';
+import { Box } from "@mui/material";
+
+//import CardActions from '@mui/material/CardActions';
+import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
+//import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
 import Navbar from '../../../../components/Navbar/Navbar';
 import Footer from '../../../../components/Footer/Footer';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import './hotel.css';
+
+const Data=[
+  {
+    id:1,
+    title:"Availability status",
+    image:img1,
+    description:"A casino is a facility or establishment where various forms of gambling activities take place.",
+    cv:'/casino'
+  },
+  {
+    id:2,
+    title:"Room booking ,functio/Event Booking",
+    image:img2,
+    description:"As a Company we provide you the best sollution for your problems on networking.",
+    cv:'/network'
+  },
+  {
+    id:3,
+    title:"Arrival list booking chart",
+    image:img3,
+    description:"As a Company we provide you the best sollution for your problem with our best experienced team",
+    cv:'/software'
+  },
+  {
+    id:4,
+    title:"Detailed booking chart booking of travel agency company",
+    image:img4,
+    description:"A casino is a facility or establishment where various forms of gambling activities take place.",
+    cv:'/survilience'
+  },
+  {
+    id:5,
+    title:"Inventory management",
+    image:img5,
+    description:"Creating applications with latest technology and can be portable to any type of devices",
+    cv:'/inventory'
+  },
+  {
+    id:6,
+    title:"ERP Management System",
+    image:img6,
+    description:"Creating a network of applications",
+    cv:'/erp'
+  },
+  {
+    id:7,
+    title:"ERP Management System",
+    image:img6,
+    description:"Creating a network of applications",
+    cv:'/erp'
+  },
+  {
+    id:8,
+    title:"ERP Management System",
+    image:img6,
+    description:"Creating a network of applications",
+    cv:'/erp'
+  }
+]
 
 function Hotel(){
     useEffect(() => {
@@ -40,6 +110,42 @@ function Hotel(){
                  <br/><br/>
                 </p>
               </div>
+            </div>
+            <div className="mainCon">
+            <div data-aos='fade-right' className='secTitle'>
+               <h3 className='title'>Features</h3>
+             </div>
+            <Grid container rowSpacing="20px" columnSpacing="40px" >
+            {
+          Data.map(({id,title,image,description}) => {
+            return(
+              // <Grid container spacing={2}>
+              
+                <Grid  key={id} item md={3} sm={6} xs={12} lg={4}>
+            <Card sx={{width:40+"vh",height:34+"vh",justifyContent:"center",bgcolor:"rgb(225,225,235)",boxShadow:"0 2px 4px rgba(133, 133, 135, 0.549)"}} data-aos='fade-up' >
+      <CardMedia sx={{height:23+"vh"}}
+        component="img"
+        alt="green iguana"
+        
+        
+        image={image}
+      />
+      <CardContent sx={{textAlign:"center"}}>
+        <Typography sx={{fontSize:18+"px"}} gutterBottom variant="h5" component="div">
+          {title}
+        </Typography>
+        {/* <Typography variant="body2" color="text.secondary">
+          {description}
+        </Typography> */}
+      </CardContent>
+      {/* <CardActions>
+        <Button size="small">Share</Button>
+        <Button size="small">Learn More</Button>
+      </CardActions> */}
+    </Card></Grid>
+   
+    )})
+          }</Grid>
             </div>
           </div>
           <Footer/>

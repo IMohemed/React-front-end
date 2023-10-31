@@ -32,6 +32,8 @@ li{
 .grid{
   display: grid;
   align-items: center;
+  /* display: grid; */
+        grid-template-columns: repeat(3,1fr);
 }
 .btn{
   padding: 0.6rem 1.5rem;

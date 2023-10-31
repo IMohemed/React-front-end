@@ -6,10 +6,12 @@ import Home1 from './routes/Home/home';
 import Partners from './routes/Partners/partners';
 import Software from './routes/Support/Software/Software';
 import Hotel from './routes/Support/Software/Hotel/hotel';
+import Mobile from './routes/Support/Software/Mobile/mobile';
 import Network from './routes/Support/Networking/Network';
 import Survilience from './routes/Support/Survilience/survilience';
 import Products from './routes/Products/products';
 import { Route,Routes } from 'react-router-dom';
+import Pos from './routes/Support/Software/Pos/pos';
 
 
 function App() {
@@ -26,6 +28,8 @@ function App() {
           <Route path='/network' element={<Network/>} />
           <Route path='/survilience' element={<Survilience/>} />
           <Route path='/software/hotel' element={<Hotel/>} />
+          <Route path='/software/mobile' element={<Mobile/>} />
+          <Route path='/software/pos' element={<Pos/>} />
          </Routes>
         {/* <Home1/> */}
         {/* <Partners/> */}

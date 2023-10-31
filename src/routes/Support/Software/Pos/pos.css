@@ -1,16 +1,16 @@
-.mobile {
+.poss {
   width: 100%;
 }
-.mobile h1 {
+.poss h1 {
   color: hsl(201, 33%, 16%);
   margin-top: 10px;
   text-align: center;
 }
-.mobile .image {
+.poss .image {
   margin-top: 20px;
   box-shadow: -1px 1px 62px -18px rgba(0, 0, 0, 0.19);
 }
-.mobile .text {
+.poss .text {
   margin-top: 1rem;
   font-size: 20px;
-}/*# sourceMappingURL=mobile.css.map */
+}/*# sourceMappingURL=pos.css.map */
