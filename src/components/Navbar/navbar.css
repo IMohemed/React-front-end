@@ -13,7 +13,7 @@
   color: hsl(201, 33%, 16%);
 }
 .header .logodiv h1 span {
-  color: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+  color: rgb(12, 149, 208);
 }
 @media screen and (max-width: 768px) {
   .header .navBar {

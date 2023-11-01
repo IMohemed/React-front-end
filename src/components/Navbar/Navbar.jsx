@@ -23,7 +23,7 @@ const Navbar = () => {
         <header className='header flex'>
             <div className='logodiv'>
                 {/* <a href='#' className='logo flex'> */}
-                    <h1>Pacific <span>Code</span> </h1>
+                    <h1 >Pacific <span>Code</span> </h1>
                 {/* </a> */}
             </div>
             <div className={active}>

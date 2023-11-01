@@ -1,13 +1,17 @@
 import React,{useEffect} from "react";
-import img1 from '../../../../Assets/hotel.jpeg';
-import img2 from '../../../../Assets/hotel.jpeg';
-import img3 from '../../../../Assets/hotel.jpeg';
-import img4 from '../../../../Assets/hotel.jpeg';
-import img5 from '../../../../Assets/hotel.jpeg';
-import img6 from '../../../../Assets/hotel.jpeg';
+import img from '../../../../Assets/hotel.jpeg';
+import img1 from '../../../../Assets/int.jpeg';
+import img2 from '../../../../Assets/mob.jpeg';
+import img3 from '../../../../Assets/grid.png';
+import img4 from '../../../../Assets/guest.jpeg';
+import img5 from '../../../../Assets/email.jpeg';
+import img6 from '../../../../Assets/house.jpeg';
+import img7 from '../../../../Assets/res.jpeg';
+import img8 from '../../../../Assets/room.jpeg';
+import img9 from '../../../../Assets/group.png';
 import Card from '@mui/material/Card';
 import Grid from '@mui/material/Grid';
-import { Box } from "@mui/material";
+//import { Box } from "@mui/material";
 
 //import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
@@ -23,57 +27,64 @@ import './hotel.css';
 const Data=[
   {
     id:1,
-    title:"Availability status",
+    title:"Intuitive & easy-to-use interface",
     image:img1,
     description:"A casino is a facility or establishment where various forms of gambling activities take place.",
     cv:'/casino'
   },
   {
     id:2,
-    title:"Room booking ,functio/Event Booking",
+    title:"Mobile & tablet optimised",
     image:img2,
     description:"As a Company we provide you the best sollution for your problems on networking.",
     cv:'/network'
   },
   {
     id:3,
-    title:"Arrival list booking chart",
+    title:"Clear visibility of the grid",
     image:img3,
     description:"As a Company we provide you the best sollution for your problem with our best experienced team",
     cv:'/software'
   },
   {
     id:4,
-    title:"Detailed booking chart booking of travel agency company",
+    title:"Guest profiles",
     image:img4,
     description:"A casino is a facility or establishment where various forms of gambling activities take place.",
     cv:'/survilience'
   },
   {
     id:5,
-    title:"Inventory management",
+    title:"Email automation",
     image:img5,
     description:"Creating applications with latest technology and can be portable to any type of devices",
     cv:'/inventory'
   },
   {
     id:6,
-    title:"ERP Management System",
+    title:"Housekeeping management:",
     image:img6,
     description:"Creating a network of applications",
     cv:'/erp'
   },
   {
     id:7,
-    title:"ERP Management System",
-    image:img6,
+    title:"Reservation management",
+    image:img7,
     description:"Creating a network of applications",
     cv:'/erp'
   },
   {
     id:8,
-    title:"ERP Management System",
-    image:img6,
+    title:"Room management",
+    image:img8,
+    description:"Creating a network of applications",
+    cv:'/erp'
+  },
+  {
+    id:9,
+    title:"Group bookings/reservations",
+    image:img9,
     description:"Creating a network of applications",
     cv:'/erp'
   }
@@ -90,7 +101,7 @@ function Hotel(){
             <div className="contain">
               <h1>Hotel Management</h1>
               <div data-aos='fade-up' className="image">
-                <img src={img1} alt=""/>
+                <img src={img} alt=""/>
               </div>
               <div className="text">
                 <p data-aos='fade-up'>
@@ -115,7 +126,7 @@ function Hotel(){
             <div data-aos='fade-right' className='secTitle'>
                <h3 className='title'>Features</h3>
              </div>
-            <Grid container rowSpacing="20px" columnSpacing="40px" >
+            <Grid container rowSpacing="40px" columnSpacing="40px" >
             {
           Data.map(({id,title,image,description}) => {
             return(
