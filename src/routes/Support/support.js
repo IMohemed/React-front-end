@@ -8,6 +8,7 @@ import 'aos/dist/aos.css';
 import './support.css';
 
 function Support(){
+  React.useEffect(() => {       window.scrollTo({left:0,top: 0,behavior: "smooth"});     }, []);
     useEffect(() => {
         Aos.init({duration:2000})
       },[])

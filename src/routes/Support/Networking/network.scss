@@ -52,14 +52,15 @@
         //align-items: center;
 
         .singleDestination{
-            margin-bottom: 5px;
+            margin-bottom: 10px;
+            padding-bottom: 10px;
             border: 1px solid #ccc;
             height: 100%;
             display: grid;
             row-gap: 10px;
             //padding: 1rem;
             border-radius: 15px;
-            align-items: center;
+            align-items:flex-start;
             background: rgb(225,225,235);
             box-shadow: 0 2px 4px rgba(133, 133, 135, 0.549);
             overflow: hidden;
@@ -95,13 +96,14 @@
             }
 
             .cardInfo{
-                padding: .5rem;
+                padding: 0rem;
                 
                 .title{
                     //padding-top: .5rem;
                     color: hsl(201,33%,16%);
                     font-size: 1.25rem;
                     text-align: center;
+                    //padding-bottom: 1rem;
                 }
 
                 // .continent{

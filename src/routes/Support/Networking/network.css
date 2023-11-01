@@ -46,13 +46,14 @@
   gap: 1.5rem;
 }
 .network .secContent .singleDestination {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
   border: 1px solid #ccc;
   height: 100%;
   display: grid;
   row-gap: 10px;
   border-radius: 15px;
-  align-items: center;
+  align-items: flex-start;
   background: rgb(225, 225, 235);
   box-shadow: 0 2px 4px rgba(133, 133, 135, 0.549);
   overflow: hidden;
@@ -79,7 +80,7 @@
   transform: scale(1.1);
 }
 .network .secContent .singleDestination .cardInfo {
-  padding: 0.5rem;
+  padding: 0rem;
 }
 .network .secContent .singleDestination .cardInfo .title {
   color: hsl(201, 33%, 16%);

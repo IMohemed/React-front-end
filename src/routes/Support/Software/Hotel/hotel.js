@@ -91,6 +91,7 @@ const Data=[
 ]
 
 function Hotel(){
+  React.useEffect(() => {       window.scrollTo({left:0,top: 0,behavior: "smooth"});     }, []);
     useEffect(() => {
         Aos.init({duration:2000})
       },[])
@@ -133,7 +134,7 @@ function Hotel(){
               // <Grid container spacing={2}>
               
                 <Grid  key={id} item md={3} sm={6} xs={12} lg={4}>
-            <Card sx={{width:40+"vh",height:34+"vh",justifyContent:"center",bgcolor:"rgb(225,225,235)",boxShadow:"0 2px 4px rgba(133, 133, 135, 0.549)"}} data-aos='fade-up' >
+            <Card sx={{width:50+"vh",height:34+"vh",justifyContent:"center",bgcolor:"rgb(225,225,235)",boxShadow:"0 2px 4px rgba(133, 133, 135, 0.549)",borderRadius:15+"px"}} data-aos='fade-up' >
       <CardMedia sx={{height:23+"vh"}}
         component="img"
         alt="green iguana"

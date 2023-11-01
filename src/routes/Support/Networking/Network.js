@@ -1,8 +1,8 @@
 import React,{useEffect} from "react";
 import img from '../../../Assets/service.jpeg';
-import img1 from '../../../Assets/hotel.jpg';
-import img2 from '../../../Assets/mobile.jpeg';
-import img3 from '../../../Assets/pos.jpeg';
+import img1 from '../../../Assets/it.png';
+import img2 from '../../../Assets/prov.jpeg';
+import img3 from '../../../Assets/cloud.jpeg';
 import Navbar from '../../../components/Navbar/Navbar';
 import Footer from '../../../components/Footer/Footer';
 import Aos from 'aos';
@@ -20,7 +20,7 @@ const Data=[
       id:2,
       title:"Service Providers",
       image:img2,
-      description:"Transform your customer experience. Take an innovative, automated, experience-first approach to your infrastructure, operations, and managed services. Our solutions put your experience as a network operator and the service experience of your customers first, helping your business stay agile, competitive, and secure in a rapidly changing economy.",
+      description:"Transform your customer experience. Take an innovative, automated, experience-first approach to your infrastructure, operations, and managed services. Our solutions put your experience as a network operator and the service experience of your customers first.",
     },
     {
       id:3,
@@ -49,6 +49,7 @@ const Data=[
 ]
 
 function Network(){
+  React.useEffect(() => {       window.scrollTo({left:0,top: 0,behavior: "smooth"});     }, []);
     useEffect(() => {
         Aos.init({duration:2000})
       },[])
@@ -79,9 +80,9 @@ function Network(){
                 <div className='desc'>
                   <p>{description}</p>
                 </div>
-                <button className='btn flex'>
+                {/* <button className='btn flex'>
                   LEARN MORE
-                </button>  
+                </button>   */}
               </div>
             )
           })

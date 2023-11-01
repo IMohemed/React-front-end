@@ -227,8 +227,12 @@
                 //background: hsl(187,85%,43%);
                 background: hsl(189, 15%, 25%);
                 padding: .5rem 2rem;
+                //text-align: center;
+                //justify-content: center;
+                //align-items: center;
 
                 small{
+                    //text-align: center;
                     font-size: 10px;
                     color: hsl(0,0%,100%);
                 }
@@ -246,9 +250,9 @@
                 padding-bottom: 1rem;
             }
             .footerDiv{
-                justify-content: space-between;
-                flex-direction: row;
-
+                //justify-content: space-between;
+                //flex-direction: row;
+                text-align: center;
                 small{
                     font-size: 14px;
                     color: hsl(0,0%,100%) ;

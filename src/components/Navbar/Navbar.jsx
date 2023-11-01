@@ -42,7 +42,8 @@ const Navbar = () => {
                     <Link to='/aboutUs' className='navLink'>About</Link>
                     </li>
                     <button  className='btn flex' type='submit'>
-                   Login<FiLogIn className='icon'/>
+                   Login
+                   {/* <FiLogIn className='icon'/> */}
                     </button>
                     
                 </ul>

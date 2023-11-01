@@ -7,8 +7,10 @@ import Footer from '../../../components/Footer/Footer';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import './survilience.css';
+import ScrollToTop from "react-scroll-to-top";
 
 function Survilience(){
+  React.useEffect(() => {       window.scrollTo({left:0,top: 0,behavior: "smooth"});     }, []);
     useEffect(() => {
         Aos.init({duration:2000})
       },[])
@@ -69,6 +71,7 @@ function Survilience(){
           </div> */}
           </div>
           <Footer/>
+          <ScrollToTop/>
         </>
     )
 

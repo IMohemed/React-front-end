@@ -12,6 +12,7 @@ import Survilience from './routes/Support/Survilience/survilience';
 import Products from './routes/Products/products';
 import { Route,Routes } from 'react-router-dom';
 import Pos from './routes/Support/Software/Pos/pos';
+import ScrollToTop from 'react-scroll-to-top';
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
     
      
       <>
+        {/* <ScrollToTop> */}
         <Routes> 
           <Route path='/' element={<Home1/>} />
           <Route path='/service' element={<Support/>} />
@@ -31,6 +33,7 @@ function App() {
           <Route path='/software/mobile' element={<Mobile/>} />
           <Route path='/software/pos' element={<Pos/>} />
          </Routes>
+         {/* </ScrollToTop> */}
         {/* <Home1/> */}
         {/* <Partners/> */}
       {/* <Products/> */}

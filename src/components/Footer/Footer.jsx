@@ -94,11 +94,13 @@ const Footer = () => {
                 <p >Opening Hours:24 Hours</p>
               </div>
             </div>
+            
           </div>
+          
 
           <div  className='footerDiv flex'>
-            <small >BEST TRAVEL THEME WEBSITE</small>
-            <small>COPYRIGHTS RESERVED - ISRATECH 2023</small>
+            {/* <small >BEST TRAVEL THEME WEBSITE</small> */}
+            <small>COPYRIGHTS RESERVED - ONIMTA</small>
           </div>
         </div>
       </div>

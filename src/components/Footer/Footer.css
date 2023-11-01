@@ -182,8 +182,7 @@
     padding-bottom: 1rem;
   }
   .footer .secContent .footerCard .footerDiv {
-    justify-content: space-between;
-    flex-direction: row;
+    text-align: center;
   }
   .footer .secContent .footerCard .footerDiv small {
     font-size: 14px;

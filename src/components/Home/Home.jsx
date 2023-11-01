@@ -1,6 +1,6 @@
 import React, {useEffect,useRef} from 'react';
 import './home.css';
-import tech from '../../Assets/tech.mp4';
+import tech from '../../Assets/tech1.mp4';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import Typewriter from "typewriter-effect";

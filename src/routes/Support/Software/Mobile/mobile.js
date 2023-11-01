@@ -10,6 +10,7 @@ import 'aos/dist/aos.css';
 import './mobile.css';
 
 function Mobile(){
+  React.useEffect(() => {       window.scrollTo({left:0,top: 0,behavior: "smooth"});     }, []);
     useEffect(() => {
         Aos.init({duration:2000})
       },[])
