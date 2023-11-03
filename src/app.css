@@ -77,3 +77,7 @@ body{
     zoom: 1.7;
   }
 }
+
+.css-1d1r5q-MuiFormHelperText-root {
+  color: red !important;
+}

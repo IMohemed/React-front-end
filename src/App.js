@@ -12,7 +12,9 @@ import Survilience from './routes/Support/Survilience/survilience';
 import Products from './routes/Products/products';
 import { Route,Routes } from 'react-router-dom';
 import Pos from './routes/Support/Software/Pos/pos';
-import ScrollToTop from 'react-scroll-to-top';
+import Login from './routes/Login/login';
+import Signup from './routes/Signup/signup';
+//import ScrollToTop from 'react-scroll-to-top';
 
 
 function App() {
@@ -32,6 +34,8 @@ function App() {
           <Route path='/software/hotel' element={<Hotel/>} />
           <Route path='/software/mobile' element={<Mobile/>} />
           <Route path='/software/pos' element={<Pos/>} />
+          <Route path='/login' element={<Login/>} />
+          <Route path='/signup' element={<Signup/>} />
          </Routes>
          {/* </ScrollToTop> */}
         {/* <Home1/> */}

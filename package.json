@@ -11,6 +11,8 @@
     "@mui/styles": "^5.14.15",
     "aos": "^3.0.0-beta.6",
     "cra-template": "1.2.0",
+    "formic": "^0.0.10",
+    "formik": "^2.4.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.11.0",
@@ -18,7 +20,8 @@
     "react-scripts": "5.0.1",
     "react-scroll-to-top": "^3.0.0",
     "typed.js": "^2.0.16",
-    "typewriter-effect": "^2.21.0"
+    "typewriter-effect": "^2.21.0",
+    "yup": "^1.3.2"
   },
   "scripts": {
     "start": "react-scripts start",

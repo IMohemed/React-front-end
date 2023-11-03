@@ -4,13 +4,15 @@ import {AiFillCloseCircle} from 'react-icons/ai';
 import {TbGridDots} from 'react-icons/tb';
 import { FiLogIn } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 // import Home1 from '../../routes/Home/home' ;
 // import Partners from '../../routes/Partners/partners';
 // import Products from '../../routes/Products/products';
 // import Support from '../../routes/Support/support';
 const Navbar = () => {
     const[dropDown,setDropDown] = useState(false)
-    const[active ,setActive] = useState('navBar')
+    const[active ,setActive] = useState('navBar');
+    const nav = useNavigate();
 
     const showNav = () =>{
         setActive('navBar activeNavbar')
@@ -41,7 +43,7 @@ const Navbar = () => {
                     <li className='navItem'>
                     <Link to='/aboutUs' className='navLink'>About</Link>
                     </li>
-                    <button  className='btn flex' type='submit'>
+                    <button onClick={() => nav("/login")}  className='btn flex' type='submit'>
                    Login
                    {/* <FiLogIn className='icon'/> */}
                     </button>
