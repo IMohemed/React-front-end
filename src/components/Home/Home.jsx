@@ -34,7 +34,7 @@ const Home = () => {
           <h1 ref={el} className='homeTitle'>
             <Typewriter options={{autoStart:true,loop:true,delay:35,
               strings:['Casino Management System','Network Sollutions','Software Sollutions','Survillience Sollutions','Inventory Management','ERP Management System']}}/>
-          </h1>
+          </h1> 
             
           
         </div>
