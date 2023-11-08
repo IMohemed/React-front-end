@@ -38,7 +38,7 @@
   z-index: 100;
 }
 .home .homeContent .textDiv {
-  padding: 2rem;
+  margin-top: -5rem;
 }
 .home .homeContent .textDiv .smallText {
   position: absolute;

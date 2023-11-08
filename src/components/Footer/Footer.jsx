@@ -57,7 +57,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className='footerLinks grid'>
+          <div className='footerLinks'>
             <div  className='linkGroup'>
               <span className="groupTitle">
                 Our Company
@@ -83,14 +83,15 @@ const Footer = () => {
                 Contact Us
               </li>
             </div>
-            <div  className='linkGroup'>
+            <div  className='linkGroup1'>
               <span className="groupTitle">
                 Location
               </span>
-              <div className='footerList1 flex'>
+              <div className='footerList1 '>
                 <p >41/3Lake Road Maharagama</p>
-              </div>
-              <div className='footerList1 flex'>
+              {/* </div> */}
+              {/* <br/> */}
+              {/* <div className='footerList1 flex'> */}
                 <p >Opening Hours:24 Hours</p>
               </div>
             </div>

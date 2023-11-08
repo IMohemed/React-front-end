@@ -127,7 +127,7 @@
                //justify-items: center;
                flex-direction: column;
                row-gap: .5rem;
-               padding-top: 2rem; 
+               padding-top: 1rem; 
                //height: 100vh;
             
 
@@ -171,6 +171,9 @@
         }
 
             .footerLinks{
+                display: flex;
+                flex-direction: row;
+                column-gap: .5rem;
                 padding-top: 1rem;
                 margin-bottom: 2.5rem; 
                 flex-basis: 50%;
@@ -210,14 +213,30 @@
                         }
                     }
                   }
-                  .footerList1{
-                    font-size: 15px;
-                    //color: hsl(240,4%,36%);
-                    color: antiquewhite;
-                    //transition: .3s ease-in-out;
-                    margin-bottom: 7px;
-
-                  }
+                  
+                }
+                .linkGroup1{
+                    margin-right: 0rem;
+                    .groupTitle{
+                      display: block;
+                      font-weight: 600;
+                      //color: hsl(201,33%,16%);
+                      color: antiquewhite;
+                      margin-bottom: .5rem;
+                    }
+                    .footerList1{
+                        font-size: 15px;
+                        //color: hsl(240,4%,36%);
+                        color: antiquewhite;
+                        
+                        //transition: .3s ease-in-out;
+                        //margin-bottom: 7px;
+                        p{
+                            //margin-top: 1rem;
+                            margin-bottom: .3rem;
+                        }
+    
+                      }
                 }
             }
             
@@ -339,6 +358,12 @@
                     .footerList{
                         font-size: 16px;
                         padding: 5px 0;
+                    }
+                }
+                .linkGroup1{
+                    margin-right: 4rem;
+                    .groupTitle{
+                        margin-bottom: .8rem;
                     }
                 }
             }

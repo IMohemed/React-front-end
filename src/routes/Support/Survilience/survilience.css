@@ -67,4 +67,51 @@
 .survilience .content .contSec .contContainer p {
   padding-bottom: 2rem;
   font-size: 20px;
+}
+
+@media screen and (max-width: 500px) {
+  .survilience .overlay {
+    position: absolute;
+    height: 40vh;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    background: rgb(48, 61, 66);
+    z-index: 1;
+    mix-blend-mode: hard-light;
+  }
+  .survilience .imageContainer {
+    top: 0;
+    width: 100%;
+    height: 40vh;
+    position: relative;
+  }
+  .survilience .imageContainer .partText h1 {
+    margin-top: 2rem;
+    font-size: 28px;
+  }
+  .survilience .imageContainer .partText p {
+    width: 80%;
+    font-size: 18px;
+    margin-left: 2rem;
+  }
+  .survilience .content {
+    margin: 0 3rem;
+    margin-bottom: 13rem;
+  }
+  .survilience .content .contSec {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 280px;
+  }
+  .survilience .content .contSec .imgContainer img {
+    height: 75%;
+    width: 100%;
+  }
+  .survilience .content .contSec .contContainer h1 {
+    font-size: 25px;
+  }
+  .survilience .content .contSec .contContainer p {
+    font-size: 18px;
+  }
 }/*# sourceMappingURL=survilience.css.map */

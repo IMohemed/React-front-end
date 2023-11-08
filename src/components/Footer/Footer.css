@@ -97,7 +97,7 @@
   align-items: flex-start;
   flex-direction: column;
   row-gap: 0.5rem;
-  padding-top: 2rem;
+  padding-top: 1rem;
 }
 .footer .secContent .footerCard .footerIntro .logoDiv .logo {
   color: antiquewhite;
@@ -127,6 +127,10 @@
   color: hsl(199, 100%, 33%);
 }
 .footer .secContent .footerCard .footerLinks {
+  display: flex;
+  flex-direction: row;
+  -moz-column-gap: 0.5rem;
+       column-gap: 0.5rem;
   padding-top: 1rem;
   margin-bottom: 2.5rem;
   flex-basis: 50%;
@@ -157,10 +161,21 @@
 .footer .secContent .footerCard .footerLinks .linkGroup .footerList:hover .icon {
   color: hsl(187, 85%, 43%);
 }
-.footer .secContent .footerCard .footerLinks .linkGroup .footerList1 {
+.footer .secContent .footerCard .footerLinks .linkGroup1 {
+  margin-right: 0rem;
+}
+.footer .secContent .footerCard .footerLinks .linkGroup1 .groupTitle {
+  display: block;
+  font-weight: 600;
+  color: antiquewhite;
+  margin-bottom: 0.5rem;
+}
+.footer .secContent .footerCard .footerLinks .linkGroup1 .footerList1 {
   font-size: 15px;
   color: antiquewhite;
-  margin-bottom: 7px;
+}
+.footer .secContent .footerCard .footerLinks .linkGroup1 .footerList1 p {
+  margin-bottom: 0.3rem;
 }
 .footer .secContent .footerCard .footerDiv {
   flex-direction: column;
@@ -243,5 +258,11 @@
   .footer .secContent .footerCard .footerLinks .linkGroup .footerList {
     font-size: 16px;
     padding: 5px 0;
+  }
+  .footer .secContent .footerCard .footerLinks .linkGroup1 {
+    margin-right: 4rem;
+  }
+  .footer .secContent .footerCard .footerLinks .linkGroup1 .groupTitle {
+    margin-bottom: 0.8rem;
   }
 }/*# sourceMappingURL=Footer.css.map */

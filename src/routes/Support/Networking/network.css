@@ -4,7 +4,7 @@
 }
 .network .overlay {
   position: absolute;
-  height: 80vh;
+  height: 40vh;
   width: 100%;
   top: 0;
   bottom: 0;
@@ -15,7 +15,7 @@
 .network .imageContainer {
   top: 0;
   width: 100%;
-  height: 80vh;
+  height: 40vh;
   position: relative;
 }
 .network .imageContainer img {
@@ -35,12 +35,12 @@
   z-index: 100;
 }
 .network .imageContainer .partText h1 {
-  font-size: 3rem;
+  font-size: 25px;
   font-weight: 600;
 }
 .network .imageContainer .partText p {
-  font-size: 1.3rem;
-  padding: 0.5rem 0 2rem 0;
+  font-size: 18px;
+  margin: 0.5rem 1.5rem;
 }
 .network .secContent {
   justify-content: center;
@@ -108,7 +108,23 @@
 
 @media screen and (min-width: 840px) {
   .network {
-    height: 160vh;
+    height: 100%;
+  }
+  .network .overlay {
+    position: absolute;
+    height: 80vh;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    background: rgb(48, 61, 66);
+    z-index: 1;
+    mix-blend-mode: hard-light;
+  }
+  .network .imageContainer {
+    top: 0;
+    width: 100%;
+    height: 80vh;
+    position: relative;
   }
   .network .destination {
     margin: 4rem 6rem;

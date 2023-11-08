@@ -132,10 +132,38 @@
 @media screen and (max-width:550px) {
     .partners
     {
-        height: 410vh;
+        //height: 410vh;
         //width: min-content;
+        .overlay{
+            position: absolute;
+            height: 40vh;
+            width: 100%;
+            top: 0;
+            bottom: 0;
+            background: rgb(48, 61, 66);
+            z-index: 1;
+            mix-blend-mode: hard-light;
+        }
+        .imageContainer{
+            top: 0;
+            width: 100%;
+        height: 40vh;
+        position: relative;
+        .partText{
+            h1{
+                margin-top: 2rem;
+                font-size: 30px;
+            }
+            p{
+                width: 80%;
+                font-size: 19px;
+                margin-left: 2rem;
+            }
+        }
+        }
         .aboutContainer{
             margin: 0 2rem;
+            margin-bottom: 13rem;
             .partText{
             .first{
                 margin-top: -3rem;
