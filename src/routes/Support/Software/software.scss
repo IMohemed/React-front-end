@@ -165,3 +165,76 @@
 }
 }
 }
+
+@media screen and (max-width:500px) {
+    .software{
+        //width: 310px;
+
+        .aboutContainer{
+            .partText{
+                margin: 0  3rem;
+                margin-bottom: 13rem;
+                .first{
+                    display: flex;
+                    flex-direction: column-reverse;
+                    width: 250px;
+
+                    .contain{
+                        width: 280px;
+                        h1{
+                            font-size: 25px;
+                            margin-top: 1rem;
+                        }
+                        p{
+                            font-size: 18px;
+                        }
+                    }
+                    img{
+                        height: 75%;
+                        width: 100%;
+                    }
+                }
+                .second{
+                    display: flex;
+                    flex-direction: column-reverse;
+                    width: 250px;
+
+                    .contain{
+                        width: 280px;
+                        h1{
+                            font-size: 25px;
+                            margin-top: 1rem;
+                        }
+                        p{
+                            font-size: 18px;
+                        }
+                    }
+                    img{
+                        height: 75%;
+                        width: 100%;
+                    }
+                }
+                .third{
+                    display: flex;
+                    flex-direction: column-reverse;
+                    width: 250px;
+
+                    .contain{
+                        width: 280px;
+                        h1{
+                            font-size: 25px;
+                            margin-top: 1rem;
+                        }
+                        p{
+                            font-size: 18px;
+                        }
+                    }
+                    img{
+                        height: 75%;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

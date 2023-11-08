@@ -43,10 +43,10 @@ const Navbar = () => {
                     <li className='navItem'>
                     <Link to='/aboutUs' className='navLink'>About</Link>
                     </li>
-                    <button onClick={() => nav("/login")}  className='btn flex' type='submit'>
-                   Login
+                    {/* <button onClick={() => nav("/login")}  className='btn flex' type='submit'> */}
+                   {/* Login */}
                    {/* <FiLogIn className='icon'/> */}
-                    </button>
+                    {/* </button> */}
                     
                 </ul>
                 </nav>

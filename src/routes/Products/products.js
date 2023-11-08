@@ -43,9 +43,9 @@ function Products(){
           </div>
           <div className="fromContainer">
             <h1>Send a Message To Us!</h1>
-            <FormGroup className={classes.formStyle}>
-              <FormControl >
-              <TextField margin="normal" className={classes.field} id="outlined-basic" label="Name" variant="outlined" ></TextField>
+            <FormGroup id="form" className={classes.formStyle}>
+              <FormControl  >
+              <TextField margin="normal"  className={classes.field} id="" label="Name" variant="outlined" ></TextField>
                 {/* <Input/> */}
               </FormControl>
               <FormControl >  

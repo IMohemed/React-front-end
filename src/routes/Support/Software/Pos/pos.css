@@ -13,4 +13,10 @@
 .poss .text {
   margin-top: 1rem;
   font-size: 20px;
+}
+
+@media screen and (max-width: 500px) {
+  .poss .contain {
+    margin-bottom: 10rem;
+  }
 }/*# sourceMappingURL=pos.css.map */

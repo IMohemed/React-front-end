@@ -127,36 +127,34 @@ function Hotel(){
             <div data-aos='fade-right' className='secTitle'>
                <h3 className='title'>Features</h3>
              </div>
-            <Grid container rowSpacing="40px" columnSpacing="40px" >
+            <Grid className="grid" container rowSpacing="40px" columnSpacing="40px" >
             {
           Data.map(({id,title,image,description}) => {
             return(
               // <Grid container spacing={2}>
               
                 <Grid  key={id} item md={3} sm={6} xs={12} lg={4}>
-            <Card sx={{width:50+"vh",height:34+"vh",justifyContent:"center",bgcolor:"rgb(225,225,235)",boxShadow:"0 2px 4px rgba(133, 133, 135, 0.549)",borderRadius:15+"px"}} data-aos='fade-up' >
-      <CardMedia sx={{height:23+"vh"}}
-        component="img"
-        alt="green iguana"
-        
-        
-        image={image}
-      />
-      <CardContent sx={{textAlign:"center"}}>
-        <Typography sx={{fontSize:18+"px"}} gutterBottom variant="h5" component="div">
-          {title}
-        </Typography>
-        {/* <Typography variant="body2" color="text.secondary">
-          {description}
-        </Typography> */}
-      </CardContent>
-      {/* <CardActions>
-        <Button size="small">Share</Button>
-        <Button size="small">Learn More</Button>
-      </CardActions> */}
-    </Card></Grid>
+            <Card className="card" sx={{width:50+"vh",height:34+"vh",justifyContent:"center",bgcolor:"rgb(225,225,235)",boxShadow:"0 2px 4px rgba(133, 133, 135, 0.549)",borderRadius:15+"px      "}} data-aos='fade-up' >
+            <CardMedia className="cardM" sx={{height:23+"vh"}}
+              component="img"
+              alt="green iguana"
+              image={image}
+            />
+            <CardContent className="cardCon" sx={{textAlign:"center"}}>
+              <Typography sx={{fontSize:18+"px"}} gutterBottom variant="h5" component="div">
+                    {title}
+              </Typography>
+              {/* <Typography variant="body2" color="text.secondary">
+                {description}
+              </Typography> */}
+            </CardContent>
+            {/* <CardActions>
+            <Button size="small">Share</Button>
+            <Button size="small">Learn More</Button>
+          </CardActions> */}
+        </Card></Grid>
    
-    )})
+    )}) 
           }</Grid>
             </div>
           </div>

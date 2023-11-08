@@ -18,3 +18,11 @@
 
 
 }
+
+@media screen and (max-width:500px) {
+    .mobile{
+        .contain{
+            margin-bottom: 10rem;
+        }
+    }
+}

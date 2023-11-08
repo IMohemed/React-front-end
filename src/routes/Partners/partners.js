@@ -47,7 +47,7 @@ function Partners(){
                 <div  className="contain">
                 <h1 >Our Mission</h1>
                 <p>A mission statement for a software company provides a clear and concise declaration of the company's purpose, goals, and values.
-                     It serves as a guiding principle for the company's actions and decisions.
+                    It serves as a guiding principle for the company's actions and decisions.
                       Here's a sample mission statement for a software companyAt XYZ Software, Inc.
                       , our mission is to empower businesses and individuals with innovative 
                       software solutions that enhance productivity,

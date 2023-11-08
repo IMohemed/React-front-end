@@ -85,3 +85,65 @@
 }
 }
 }
+
+@media screen and (max-width:500px) {
+    .service{
+
+        .overlay{
+            position: absolute;
+            height: 40vh;
+            width: 100%;
+            top: 0;
+            bottom: 0;
+            background: rgb(48, 61, 66);
+            z-index: 1;
+            mix-blend-mode: hard-light;
+        }
+        .imageContainer{
+            top: 0;
+            width: 100%;
+        height: 4;
+        position: relative;
+        }
+        .content{
+            width: 100%;
+            //position: relative;
+            left: 0;
+            // right: 0;
+            padding: 0;
+             margin: 0rem;
+            height: 110vh;
+            margin-bottom: 4rem;
+            .contSec{
+                display: flex;
+                 flex-direction: column-reverse;
+                 //text-align: center;
+        //         //justify-content: space-between;
+                margin:  2rem 0 0;
+                //width: 100%;
+                left: 0;
+                padding: 0;
+                img{
+                    margin-top: -3.5rem;
+                    height: 250px;
+                    width: 100%;
+                    object-fit: cover;
+                    border-radius: 6px;
+                    box-shadow: -1px 1px 62px -18px rgba(0,0,0,0.19);
+                }
+                .contContainer{
+                   //margin-top: -2.5rem;
+                   width: 100%;
+                   margin-bottom:  0rem;
+                   margin-right: 5rem;
+                   height: max-content;
+                    h1{
+                        font-size: 26px;
+                    }
+                }
+
+            }
+        }
+    }
+    
+}

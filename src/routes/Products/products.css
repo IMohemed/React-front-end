@@ -42,6 +42,9 @@
   margin: 4rem 6rem;
   color: #2a2a2a;
 }
+.products .fromContainer h1 {
+  font-size: 50px;
+}
 .products .fromContainer .btn {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -55,14 +58,29 @@
 }
 
 @media screen and (max-width: 850px) {
+  .products {
+    width: -moz-min-content;
+    width: min-content;
+  }
   .products .fromContainer {
-    margin: 4rem 2rem;
+    margin: 4rem 0rem;
+    height: 85vh;
   }
-  .products .fromContainer form {
-    padding-top: 2rem;
-    width: 90%;
+  .products .fromContainer h1 {
+    margin: 1rem;
+    font-size: 20px;
   }
-  .products .fromContainer form .btn {
-    width: 70%;
+  .products .fromContainer #form {
+    margin: 1rem 2rem;
+    padding-bottom: 1rem;
+    width: 295px;
+    height: 60vh;
+    padding: 40;
+    margin-top: 20;
+    padding-top: 40;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  }
+  .products .fromContainer #form TextField {
+    width: 20px;
   }
 }/*# sourceMappingURL=products.css.map */

@@ -152,4 +152,68 @@
      object-fit: cover;
   border-radius: 6px;
   box-shadow: -1px 1px 62px -18px rgba(0, 0, 0, 0.19);
+}
+
+@media screen and (max-width: 500px) {
+  .software .aboutContainer .partText {
+    margin: 0 3rem;
+    margin-bottom: 13rem;
+  }
+  .software .aboutContainer .partText .first {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 250px;
+  }
+  .software .aboutContainer .partText .first .contain {
+    width: 280px;
+  }
+  .software .aboutContainer .partText .first .contain h1 {
+    font-size: 25px;
+    margin-top: 1rem;
+  }
+  .software .aboutContainer .partText .first .contain p {
+    font-size: 18px;
+  }
+  .software .aboutContainer .partText .first img {
+    height: 75%;
+    width: 100%;
+  }
+  .software .aboutContainer .partText .second {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 250px;
+  }
+  .software .aboutContainer .partText .second .contain {
+    width: 280px;
+  }
+  .software .aboutContainer .partText .second .contain h1 {
+    font-size: 25px;
+    margin-top: 1rem;
+  }
+  .software .aboutContainer .partText .second .contain p {
+    font-size: 18px;
+  }
+  .software .aboutContainer .partText .second img {
+    height: 75%;
+    width: 100%;
+  }
+  .software .aboutContainer .partText .third {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 250px;
+  }
+  .software .aboutContainer .partText .third .contain {
+    width: 280px;
+  }
+  .software .aboutContainer .partText .third .contain h1 {
+    font-size: 25px;
+    margin-top: 1rem;
+  }
+  .software .aboutContainer .partText .third .contain p {
+    font-size: 18px;
+  }
+  .software .aboutContainer .partText .third img {
+    height: 75%;
+    width: 100%;
+  }
 }/*# sourceMappingURL=software.css.map */
