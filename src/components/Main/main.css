@@ -147,6 +147,53 @@
   align-items: center;
   margin-left: 25%;
 }
+.main .hero .contain {
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(225, 225, 235);
+  margin-bottom: 10rem;
+}
+.main .hero .contain .indicator {
+  display: none;
+}
+.main .hero .contain .testimonial {
+  position: relative;
+  max-width: 900px;
+  row-gap: 30px;
+  margin-left: -4rem;
+  width: 300px;
+  overflow: hidden;
+}
+.main .hero .contain .testimonial .slide-row {
+  display: flex;
+  margin-left: 0rem;
+  width: 80%;
+}
+.main .hero .contain .testimonial .slide-row .slide-col {
+  margin-left: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column-reverse;
+}
+.main .hero .contain .testimonial .slide-row .slide-col .user-text {
+  margin-top: 1rem;
+  width: 240px;
+  text-align: center;
+  padding: 0 5px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #333;
+}
+.main .hero .contain .testimonial .slide-row .slide-col img {
+  height: 170px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
 
 @media screen and (min-width: 500px) {
   .title {
@@ -252,5 +299,108 @@
   }
   .main .secContent .singleDestination {
     height: auto;
+  }
+  .main .hero {
+    width: 100%;
+    height: 90vh;
+    background: rgb(225, 225, 235);
+    border-radius: 1.5rem;
+  }
+  .main .hero h1 {
+    text-align: center;
+    padding-top: 40px;
+    font-size: 40px;
+    color: hsl(201, 33%, 16%);
+  }
+  .main .hero .contain {
+    width: 800px;
+    height: 400px;
+    position: relative;
+    margin-top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .main .hero .contain .arrow {
+    display: none;
+  }
+  .main .hero .contain .indicator {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -40px;
+    background: #1e1a1a;
+    border-radius: 7rem;
+    width: 4rem;
+    align-items: center;
+    opacity: 0.8;
+    display: block;
+  }
+  .main .hero .contain .indicator .btn {
+    display: inline-block;
+    width: 1px;
+    margin-top: 2px;
+    margin-left: 4px;
+    margin-right: 0px;
+    margin-bottom: 2px;
+    padding-right: 0rem;
+    border-radius: 15px;
+    padding-top: 0rem;
+    padding-left: 0.5rem;
+    padding-bottom: 0.5rem;
+    background: rgb(143, 154, 171);
+    cursor: pointer;
+    transition: 0.4s;
+  }
+  .main .hero .contain .indicator .active {
+    width: 20px;
+    background: beige;
+  }
+  .main .hero .contain .testimonial {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  .main .hero .contain .testimonial .slide-row {
+    display: flex;
+    width: 3200px;
+    transition: 0.5s;
+  }
+  .main .hero .contain .testimonial .slide-row .slide-col {
+    width: 800px;
+    height: 400px;
+    position: relative;
+  }
+  .main .hero .contain .testimonial .slide-row .slide-col .user-img {
+    position: absolute;
+    top: 2.5rem;
+    right: 0;
+    left: 30rem;
+    height: 100%;
+  }
+  .main .hero .contain .testimonial .slide-row .slide-col .user-img img {
+    height: 90%;
+    border-radius: 10px;
+  }
+  .main .hero .contain .testimonial .slide-row .slide-col .user-text {
+    background: rgb(85, 83, 83);
+    width: 520px;
+    height: 270px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 10px;
+    color: antiquewhite;
+    padding: 45px;
+    box-sizing: border-box;
+    z-index: 2;
+  }
+  .main .hero .contain .testimonial .slide-row .slide-col .user-text p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .main .hero .contain .testimonial .slide-row .slide-col .user-text h3 {
+    margin: 35px 0 5px;
+    color: aliceblue;
   }
 }/*# sourceMappingURL=main.css.map */

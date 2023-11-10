@@ -1,6 +1,6 @@
 .network{
     width: 100%;
-    height: 260vh;
+    //height: 260vh;
     .overlay{
         position: absolute;
         height: 40vh;
@@ -51,6 +51,7 @@
     .secContent{
         justify-content: center;
         row-gap:2rem;
+        margin-bottom: 10rem;
         //align-items: center;
 
         .singleDestination{

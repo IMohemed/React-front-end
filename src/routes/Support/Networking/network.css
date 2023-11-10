@@ -1,6 +1,5 @@
 .network {
   width: 100%;
-  height: 260vh;
 }
 .network .overlay {
   position: absolute;
@@ -45,6 +44,7 @@
 .network .secContent {
   justify-content: center;
   row-gap: 2rem;
+  margin-bottom: 10rem;
 }
 .network .secContent .singleDestination {
   margin-bottom: 30px;

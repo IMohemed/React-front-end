@@ -8,10 +8,20 @@ import img5 from '../../Assets/inventory.jpeg';
 import img6 from '../../Assets/ERP.jpeg';
 import img7 from '../../Assets/robo.jpg';
 import img8 from '../../Assets/sdevelop.jpeg';
+import img9 from '../../Assets/steve.jpeg';
+import img10 from '../../Assets/jack.jpeg';
+import img11 from '../../Assets/obama.jpeg';
+import img12 from '../../Assets/sdevelop.jpeg';
 import Software from '../../routes/Support/Software/Software';
 import { useNavigate } from 'react-router-dom';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import { Navigation } from 'swiper/modules';
+import { Slide, sliderClasses } from '@mui/material';
+import { FiAlignLeft, FiArrowLeftCircle, FiArrowRightCircle } from 'react-icons/fi';
 const Data=[
   {
     id:1,
@@ -56,12 +66,57 @@ const Data=[
     cv:'/erp'
   }
 ]
-const Main = () => {
+// const move=() => {
   
+// }
+const Main = () => {
+  const [activeButton, setActivebutton] = useState(0);
   useEffect(() => {
     Aos.init({duration:2000})
   },[])
   const navigate = useNavigate();
+  const st = document.getElementById('slide');
+  // const carousel = document.querySelector(".slide-row");
+  // const Arowbtn = document.querySelectorAll(".arrow");
+  // const firstcardwidth = carousel.querySelector(".slide-col").offsetWidth ;
+    //const btn = document.getElementsByClassName('btn');
+    //let i;
+    const handleClick = (buttonIndex) => {
+      if(buttonIndex===0)
+      st.style.transform = 'translateX(0px)';
+      if(buttonIndex===1)
+      st.style.transform = 'translateX(-800px)';
+      if(buttonIndex===2)
+      st.style.transform = 'translateX(-1600px)';
+      if(buttonIndex===3)
+      st.style.transform = ' translateX(-2400px)';
+      // for(i=0;i<4;i++){
+      //   btn[i].classList.remove('active');
+      // }
+      // btn[0].classList.add('active');
+      setActivebutton(buttonIndex);
+      
+    };
+    const handlearrow = () => {
+    //   Arowbtn.forEach(btn => {
+    //     carousel.scrollLeft += btn.id ==='left'? -firstcardwidth:firstcardwidth;
+    // })
+  };
+  
+  // const handleClick2 = () => {
+  //   st.style.transform = `translateX(-1600px)`;
+  //   for(i=0;i<4;i++){
+  //     btn[i].classList.remove('active');
+  //   }
+  //   btn[2].classList.add('active');
+  // };
+  // const handleClick3 = () => {
+  //   st.style.transform = `translateX(-2400px)`;
+  //   for(i=0;i<4;i++){
+  //     btn[i].classList.remove('active');
+  //   }
+  //   btn[3].classList.add("active");
+  // };
   return (
     <section className='main container section'>
       <div data-aos='fade-up' className='destination'>
@@ -134,6 +189,66 @@ const Main = () => {
             )
           })
         }
+      </div>
+      <div data-aos='fade-up'  className='hero'>
+        <h1> Reviews</h1>
+        <div className='contain'>
+        <FiArrowLeftCircle onClick={() => handlearrow()} id='left' className='arrow'/>
+          <div className='indicator'>
+          
+             <span onClick={() => handleClick(0) } className={`btn ${activeButton===0?'active':''}`}></span> 
+             <span onClick={() => handleClick(1) } className={`btn ${activeButton===1?'active':''}`}></span> 
+             <span onClick={() => handleClick(2) } className={`btn ${activeButton===2?'active':''}`}></span> 
+             <span onClick={() => handleClick(3) } className={`btn ${activeButton===3?'active':''}`}></span> 
+          </div>
+          <div  className='testimonial'>
+            
+          <div className='slide-row' id='slide'>
+          <div className='slide-col' >
+            <div className='user-text'>
+              <p>Steven Paul Jobs (February 24, 1955 – October 5, 2011) was an American business magnate, inventor, and investor best known as the co-founder of Apple. Jobs was also chairman and majority shareholder of Pixar, and the founder of NeXT.</p>
+              <h3>Steve Jobs</h3>
+              <p>Steve Inc.</p>
+            </div>
+            <div className='user-img'>
+              <img src={img9} alt=''/>
+            </div>
+          </div>
+          <div className='slide-col' >
+            <div className='user-text'>
+              <p>Steven Paul Jobs (February 24, 1955 – October 5, 2011) was an American business magnate, inventor, and investor best known as the co-founder of Apple. Jobs was also chairman and majority shareholder of Pixar, and the founder of NeXT.</p>
+              <h3>Steve Jobs</h3>
+              <p>Steve Inc.</p>
+            </div>
+            <div className='user-img'>
+              <img src={img10} alt=''/>
+            </div>
+          </div>
+          <div className='slide-col' >
+            <div className='user-text'>
+              <p>Steven Paul Jobs (February 24, 1955 – October 5, 2011) was an American business magnate, inventor, and investor best known as the co-founder of Apple. Jobs was also chairman and majority shareholder of Pixar, and the founder of NeXT.</p>
+              <h3>Steve Jobs</h3>
+              <p>Steve Inc.</p>
+            </div>
+            <div className='user-img'>
+              <img src={img11} alt='' />
+            </div>
+          </div>
+          <div className='slide-col' >
+            <div className='user-text'>
+              <p>Steven Paul Jobs (February 24, 1955 – October 5, 2011) was an American business magnate, inventor, and investor best known as the co-founder of Apple. Jobs was also chairman and majority shareholder of Pixar, and the founder of NeXT.</p>
+              <h3>Steve Jobs</h3>
+              <p>Steve Inc.</p>
+            </div>
+            <div className='user-img'>
+              <img src={img12} alt=''/>
+            </div>
+          </div>
+        </div>
+        
+          </div>
+          <FiArrowRightCircle onClick={() => handlearrow()} id='right' className='arrow'/>
+        </div>
       </div>
     </section>
   );
