@@ -201,6 +201,18 @@
         }
     }
     .hero{
+        // .bton{
+        //     position: relative;    
+        //     transform: translateY(-50%);
+        //     cursor: pointer;
+        //     top: 13rem;
+        // }
+        // #left{
+        //     left: .5rem;
+        // }
+        // #right{
+        //     left: 17rem;
+        // }
         .contain{
             height: 50vh;
             width: 100%;
@@ -209,6 +221,7 @@
             justify-content: center;
             background: rgb(225,225,235);
             margin-bottom: 10rem;
+            
             .indicator{
                 display: none;
             }
@@ -406,6 +419,9 @@
             font-size: 40px;
             color: hsl(201,33%,16%);
         }
+        .bton{
+            display: none;
+        }
         .contain{
             width: 800px;
             height: 400px;
@@ -413,9 +429,7 @@
             margin-top: 20%;
             left: 50%;
             transform: translate(-50%,-50%);
-            .arrow{
-                display: none;
-            }
+            
             // .right{
             //     display: none;
             // }

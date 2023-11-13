@@ -76,9 +76,9 @@ const Main = () => {
   },[])
   const navigate = useNavigate();
   const st = document.getElementById('slide');
-  // const carousel = document.querySelector(".slide-row");
-  // const Arowbtn = document.querySelectorAll(".arrow");
-  // const firstcardwidth = carousel.querySelector(".slide-col").offsetWidth ;
+  const carousel = document.querySelector(".contain .testimonial .slide-row");
+  const arrowBtns = document.querySelectorAll(".bton");
+  //const firstcardwidth = document.querySelector(".slide-col").offsetWidth;
     //const btn = document.getElementsByClassName('btn');
     //let i;
     const handleClick = (buttonIndex) => {
@@ -92,16 +92,19 @@ const Main = () => {
       st.style.transform = ' translateX(-2400px)';
       // for(i=0;i<4;i++){
       //   btn[i].classList.remove('active');
-      // }
+      // } 
       // btn[0].classList.add('active');
       setActivebutton(buttonIndex);
       
     };
-    const handlearrow = () => {
-    //   Arowbtn.forEach(btn => {
-    //     carousel.scrollLeft += btn.id ==='left'? -firstcardwidth:firstcardwidth;
-    // })
-  };
+    const handlearrow = (() => {
+      arrowBtns.forEach(btn => {
+       const dir = btn.id === 'left'?  'left' : 'right';
+       const scroll = carousel.clientWidth*dir;
+       carousel.scrollBy({left:scroll,behavior:'smooth'});
+      console.log(dir);
+    })
+  });
   
   // const handleClick2 = () => {
   //   st.style.transform = `translateX(-1600px)`;
@@ -186,14 +189,18 @@ const Main = () => {
                   LEARN MORE
                 </button>  
               </div>
-            )
+            ) 
           })
         }
       </div>
       <div data-aos='fade-up'  className='hero'>
         <h1> Reviews</h1>
+        
+        
         <div className='contain'>
-        <FiArrowLeftCircle onClick={() => handlearrow()} id='left' className='arrow'/>
+        {/* <button  > */}
+        
+        {/* </button> */}
           <div className='indicator'>
           
              <span onClick={() => handleClick(0) } className={`btn ${activeButton===0?'active':''}`}></span> 
@@ -202,7 +209,7 @@ const Main = () => {
              <span onClick={() => handleClick(3) } className={`btn ${activeButton===3?'active':''}`}></span> 
           </div>
           <div  className='testimonial'>
-            
+          <FiArrowLeftCircle onClick={() => handlearrow()} id='left' className='bton'  /> 
           <div className='slide-row' id='slide'>
           <div className='slide-col' >
             <div className='user-text'>
@@ -245,10 +252,13 @@ const Main = () => {
             </div>
           </div>
         </div>
-        
+        <FiArrowRightCircle onClick={() => handlearrow()} id='rigt' className='bton'  />
           </div>
-          <FiArrowRightCircle onClick={() => handlearrow()} id='right' className='arrow'/>
+          {/* <button  > */}
+          
+        {/* </button> */}
         </div>
+        
       </div>
     </section>
   );

@@ -312,6 +312,9 @@
     font-size: 40px;
     color: hsl(201, 33%, 16%);
   }
+  .main .hero .bton {
+    display: none;
+  }
   .main .hero .contain {
     width: 800px;
     height: 400px;
@@ -319,9 +322,6 @@
     margin-top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
-  }
-  .main .hero .contain .arrow {
-    display: none;
   }
   .main .hero .contain .indicator {
     position: absolute;
