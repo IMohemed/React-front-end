@@ -75,13 +75,13 @@ const Main = () => {
     Aos.init({duration:2000})
   },[])
   const navigate = useNavigate();
-  const st = document.getElementById('slide');
-  const carousel = document.querySelector(".contain .testimonial .slide-row");
-  const arrowBtns = document.querySelectorAll(".bton");
+  
+  
   //const firstcardwidth = document.querySelector(".slide-col").offsetWidth;
     //const btn = document.getElementsByClassName('btn');
     //let i;
     const handleClick = (buttonIndex) => {
+      const st = document.getElementById('slide');
       if(buttonIndex===0)
       st.style.transform = 'translateX(0px)';
       if(buttonIndex===1)
@@ -89,7 +89,7 @@ const Main = () => {
       if(buttonIndex===2)
       st.style.transform = 'translateX(-1600px)';
       if(buttonIndex===3)
-      st.style.transform = ' translateX(-2400px)';
+      st.style.transform = 'translateX(-2400px)';
       // for(i=0;i<4;i++){
       //   btn[i].classList.remove('active');
       // } 
@@ -97,14 +97,44 @@ const Main = () => {
       setActivebutton(buttonIndex);
       
     };
-    const handlearrow = (() => {
-      arrowBtns.forEach(btn => {
-       const dir = btn.id === 'left'?  'left' : 'right';
-       const scroll = carousel.clientWidth*dir;
-       carousel.scrollBy({left:scroll,behavior:'smooth'});
-      console.log(dir);
-    })
-  });
+
+  //   const handlearrow = (() => {
+  //     const carousel = document.querySelector("#slide");
+  //     const arrowBtns = document.querySelectorAll(".bton");
+  //     arrowBtns.forEach(btn => {
+  //      const dir = btn.id === 'left'?  -1 : 1;
+  //      const scroll = carousel.clientWidth*dir;
+  //      carousel.scrollBy({left:scroll,behavior:'smooth'});
+  //     console.log(dir);
+  //   })
+  // });
+
+  //const carousel = document.querySelector("#slide");
+      //const arrowBtns = document.querySelectorAll(".bton");
+    
+      const handlearrow = (dir) => {
+        const carousel = document.querySelector(".testimonial ");
+        //const st = document.getElementById('slide');
+        let b=0;
+        switch(dir){
+      case 'left':
+        
+        b+=300;
+        //st.style.transform = `translateX(${b}px)`;
+        carousel.scrollBy({left:-carousel.clientWidth,behavior:'smooth'});
+        console.log('left');
+        break;
+      case 'right':
+        b-=300;
+        //st.style.transform = `translateX(${b}px)`;
+        carousel.scrollBy({left:carousel.clientWidth,behavior:'smooth'});
+        console.log('rigt');
+        break;
+
+      default:
+        console.log('undefined direction detected');
+    }
+  }
   
   // const handleClick2 = () => {
   //   st.style.transform = `translateX(-1600px)`;
@@ -195,21 +225,21 @@ const Main = () => {
       </div>
       <div data-aos='fade-up'  className='hero'>
         <h1> Reviews</h1>
-        
-        
+        <FiArrowLeftCircle onClick={() => handlearrow('left')} id='let' className='bton'  />
+        <FiArrowRightCircle onClick={() => handlearrow('right')} id='rigt' className='bton'  />
         <div className='contain'>
         {/* <button  > */}
         
         {/* </button> */}
           <div className='indicator'>
           
-             <span onClick={() => handleClick(0) } className={`btn ${activeButton===0?'active':''}`}></span> 
-             <span onClick={() => handleClick(1) } className={`btn ${activeButton===1?'active':''}`}></span> 
+             <span onClick={() => handleClick(0) } className={`btn ${activeButton===0?'active':' '}`}></span> 
+             <span onClick={() => handleClick(1) } className={`btn ${activeButton===1?'active':' '}`}></span> 
              <span onClick={() => handleClick(2) } className={`btn ${activeButton===2?'active':''}`}></span> 
-             <span onClick={() => handleClick(3) } className={`btn ${activeButton===3?'active':''}`}></span> 
+             <span onClick={() => handleClick(3) } className={`btn ${activeButton===3?'active':' '}`}></span> 
           </div>
           <div  className='testimonial'>
-          <FiArrowLeftCircle onClick={() => handlearrow()} id='left' className='bton'  /> 
+          
           <div className='slide-row' id='slide'>
           <div className='slide-col' >
             <div className='user-text'>
@@ -252,7 +282,7 @@ const Main = () => {
             </div>
           </div>
         </div>
-        <FiArrowRightCircle onClick={() => handlearrow()} id='rigt' className='bton'  />
+        
           </div>
           {/* <button  > */}
           

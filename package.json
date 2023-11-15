@@ -9,6 +9,7 @@
     "@mui/material": "^5.14.14",
     "@mui/styled-engine-sc": "^6.0.0-alpha.3",
     "@mui/styles": "^5.14.15",
+    "@react-google-maps/api": "^2.19.2",
     "aos": "^3.0.0-beta.6",
     "cra-template": "1.2.0",
     "formic": "^0.0.10",

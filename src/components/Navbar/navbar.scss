@@ -23,25 +23,28 @@
         .navBar{
             position: absolute;
         background: hsl(0,0%,93%);
-        height:max-content;
-        width:80%;
-        border-radius: 1rem;
-        top: -500rem;
-        left: 50%;
-        transform: translate(-50%);
-        z-index: 2000;
+        height:50rem;
+        width:60%;
+        //border-radius: 1rem;
+        right: -300rem;
+        //right: 0%;
+        top: -3rem;
+        //margin-right: 0;
+        //transform: translate(-10%);
+        //z-index: 1000;
         box-shadow: 0 2px 4px rgba(2,15,29,0.904);
-        transition: .5s ease-in-out;
+        transition: .8s ease-in-out;
 
         .navLists{
             flex-direction: column;
-            justify-content: center;
+            //justify-content: flex-start;
+            align-items: center;
             width: 100%;
             margin: auto;
-            padding: .5rem 0;
+            padding: 1rem 0;
 
             .navItem{
-                padding: .5rem 0;
+                padding: 2rem 1rem 0rem;
 
                 .navLink{
                     color: hsl(240, 4%, 36%);
@@ -61,8 +64,9 @@
 
         .closeNavbar{
             position: absolute;
+            //left: 1rem;
             top: 1rem;
-            right: 1.5rem;
+            left: 1rem;
             color: hsl(199,100%,33%);
             &:hover{
                 color: hsl(187,85%,43%);
@@ -73,6 +77,7 @@
         
         .activeNavbar{
             top: 7rem;
+            right: 0rem;
         }
     }
     

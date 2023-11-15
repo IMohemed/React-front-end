@@ -45,6 +45,19 @@
 .products .fromContainer h1 {
   font-size: 40px;
 }
+.products .fromContainer .content {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+.products .fromContainer .content .map {
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+.products .fromContainer .content .message {
+  width: 100%;
+}
 .products .fromContainer .btn {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -74,7 +87,7 @@
   }
   .products .imageContainer {
     top: 0;
-    width: 100%;
+    width: 360px;
     height: 40vh;
     position: relative;
   }
@@ -88,24 +101,33 @@
     margin-left: 2rem;
   }
   .products .fromContainer {
-    margin: 4rem 0rem;
-    height: 85vh;
+    margin: 4rem 0rem 12rem;
   }
   .products .fromContainer h1 {
     margin: 1rem;
     font-size: 20px;
   }
-  .products .fromContainer #form {
-    margin: 1rem 2rem;
+  .products .fromContainer .content {
+    display: flex;
+    flex-direction: column;
+  }
+  .products .fromContainer .content .map {
+    margin-top: 2rem;
+    margin-left: 1rem;
+  }
+  .products .fromContainer .content .message {
+    right: 0;
+  }
+  .products .fromContainer .content .message #form {
+    margin: 1rem 1rem;
     padding-bottom: 1rem;
     width: 295px;
     height: 60vh;
-    padding: 40;
     margin-top: 20;
     padding-top: 40;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
   }
-  .products .fromContainer #form TextField {
+  .products .fromContainer .content .message #form TextField {
     width: 20px;
   }
 }/*# sourceMappingURL=products.css.map */

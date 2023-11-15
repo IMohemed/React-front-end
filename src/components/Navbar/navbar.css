@@ -19,26 +19,22 @@
   .header .navBar {
     position: absolute;
     background: hsl(0, 0%, 93%);
-    height: -moz-max-content;
-    height: max-content;
-    width: 80%;
-    border-radius: 1rem;
-    top: -500rem;
-    left: 50%;
-    transform: translate(-50%);
-    z-index: 2000;
+    height: 50rem;
+    width: 60%;
+    right: -300rem;
+    top: -3rem;
     box-shadow: 0 2px 4px rgba(2, 15, 29, 0.904);
-    transition: 0.5s ease-in-out;
+    transition: 0.8s ease-in-out;
   }
   .header .navBar .navLists {
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
     width: 100%;
     margin: auto;
-    padding: 0.5rem 0;
+    padding: 1rem 0;
   }
   .header .navBar .navLists .navItem {
-    padding: 0.5rem 0;
+    padding: 2rem 1rem 0rem;
   }
   .header .navBar .navLists .navItem .navLink {
     color: hsl(240, 4%, 36%);
@@ -48,7 +44,7 @@
   .header .navBar .closeNavbar {
     position: absolute;
     top: 1rem;
-    right: 1.5rem;
+    left: 1rem;
     color: hsl(199, 100%, 33%);
   }
   .header .navBar .closeNavbar:hover {
@@ -56,6 +52,7 @@
   }
   .header .activeNavbar {
     top: 7rem;
+    right: 0rem;
   }
 }
 .header .toggleNavbar .icon {
