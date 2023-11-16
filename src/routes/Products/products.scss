@@ -53,7 +53,7 @@
         }
     }}
     .fromContainer{
-        margin: 4rem 6rem;
+        //margin: 4rem 6rem;
         
         color: #2a2a2a;
         
@@ -64,8 +64,8 @@
             //margin: 2rem 1rem;
             justify-content: space-between;
             .map{
-                margin-top: 4rem;
-                margin-left: 2rem;
+                // margin-top: 4rem;
+                // margin-left: 2rem;
                 
                 //margin-bottom: 5rem;
             }
@@ -76,8 +76,12 @@
                 width: 100%;
                 //margin-left: 10rem;
                 h1{
+                    margin-top: 2.5rem;
                     font-size: 30px;
-                    margin-left: 13rem;
+                    margin-left: 12rem;
+                }
+                #form{
+                    margin-top: 2.5rem;
                 }
             }
         }

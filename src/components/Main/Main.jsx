@@ -13,7 +13,7 @@ import img10 from '../../Assets/jack.jpeg';
 import img11 from '../../Assets/obama.jpeg';
 import img12 from '../../Assets/sdevelop.jpeg';
 import img13 from '../../Assets/go.png';
-import img14 from '../../Assets/ad.png';
+import img14 from '../../Assets/tw.png';
 import img15 from '../../Assets/ib.png';
 import img16 from '../../Assets/vi.png';
 import img17 from '../../Assets/mi.png';
@@ -324,13 +324,13 @@ const Main = () => {
       <div className='cont'>
         <h2>Our Partners</h2>
         <Slider {...settings} className='slide'>
-          <div className='img-slide'>
+          <div className='img-slide1'>
             <img src= {img13} alt=''/>
           </div>
           <div className='img-slide'>
           <img src= {img14} alt=''/>
           </div>
-          <div className='img-slide'>
+          <div className='img-slide1'>
           <img src= {img15} alt=''/>
           </div>
           <div className='img-slide'>

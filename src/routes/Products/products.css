@@ -39,7 +39,6 @@
   padding: 0.5rem 0 2rem 0;
 }
 .products .fromContainer {
-  margin: 4rem 6rem;
   color: #2a2a2a;
 }
 .products .fromContainer .content {
@@ -48,16 +47,16 @@
   flex-direction: row-reverse;
   justify-content: space-between;
 }
-.products .fromContainer .content .map {
-  margin-top: 4rem;
-  margin-left: 2rem;
-}
 .products .fromContainer .content .message {
   width: 100%;
 }
 .products .fromContainer .content .message h1 {
+  margin-top: 2.5rem;
   font-size: 30px;
-  margin-left: 13rem;
+  margin-left: 12rem;
+}
+.products .fromContainer .content .message #form {
+  margin-top: 2.5rem;
 }
 .products .fromContainer .btn {
   margin-top: 1rem;

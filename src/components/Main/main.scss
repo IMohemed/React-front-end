@@ -559,7 +559,8 @@
         }
         .slide{
             margin: 1rem;
-            padding: 1rem;
+            //padding: 1rem 1rem 1rem;
+            align-items: center;
             // background: rgb(225,225,235);
             // border-radius: .5rem;
             .slick-next{
@@ -569,11 +570,25 @@
 
             .img-slide{
               //margin-left: 2rem;
-              justify-content: center;
+              //justify-content: center;
+              
+              justify-content:center;
+              //padding: 2rem 1rem 0rem;
+              height: 30vh;
               img{
                 margin-top: 2rem;
-                padding: 1rem;
+                padding: 2rem 1rem 1rem;
+                display: inline-flex;
+                
+                align-items: center;
+                //flex-direction: ;
               }
+            }
+            .img-slide1{
+                justify-content:center;
+              padding: 3rem 1rem 2rem;
+              height: 30vh;
+              // border: 1px solid #ccc;
             }
         }
     }
