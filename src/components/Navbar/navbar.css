@@ -25,6 +25,7 @@
     top: 3.8rem;
     box-shadow: 0 2px 4px rgba(2, 15, 29, 0.904);
     transition: 1s ease-in-out;
+    border-radius: 0.3rem;
   }
   .header .navBar .navLists {
     flex-direction: column;
