@@ -12,6 +12,12 @@ import img9 from '../../Assets/steve.jpeg';
 import img10 from '../../Assets/jack.jpeg';
 import img11 from '../../Assets/obama.jpeg';
 import img12 from '../../Assets/sdevelop.jpeg';
+import img13 from '../../Assets/go.png';
+import img14 from '../../Assets/ad.png';
+import img15 from '../../Assets/ib.png';
+import img16 from '../../Assets/vi.png';
+import img17 from '../../Assets/mi.png';
+import img18 from '../../Assets/ma.png';
 import Software from '../../routes/Support/Software/Software';
 import { useNavigate } from 'react-router-dom';
 import Aos from 'aos';
@@ -22,6 +28,10 @@ import 'swiper/css/navigation';
 import { Navigation } from 'swiper/modules';
 import { Slide, sliderClasses } from '@mui/material';
 import { FiAlignLeft, FiArrowLeftCircle, FiArrowRightCircle } from 'react-icons/fi';
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+
 const Data=[
   {
     id:1,
@@ -75,6 +85,7 @@ const Main = () => {
     Aos.init({duration:2000})
   },[])
   const navigate = useNavigate();
+
   
   
   //const firstcardwidth = document.querySelector(".slide-col").offsetWidth;
@@ -135,6 +146,25 @@ const Main = () => {
         console.log('undefined direction detected');
     }
   }
+  const settings = {
+    dots: false,
+    infinite: true,
+    accessibility:false,
+    autoplay:true,
+    autoplaySpeed: 2000,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    pauseOnHover:false,
+    responsive: [
+      {
+      breakpoint: 500,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    }
+  ]
+  };
   
   // const handleClick2 = () => {
   //   st.style.transform = `translateX(-1600px)`;
@@ -224,7 +254,7 @@ const Main = () => {
         }
       </div>
       <div data-aos='fade-up'  className='hero'>
-        <h1> Reviews</h1>
+        {/* <h1> Reviews</h1> */}
         <FiArrowLeftCircle onClick={() => handlearrow('left')} id='let' className='bton'  />
         <FiArrowRightCircle onClick={() => handlearrow('right')} id='rigt' className='bton'  />
         <div className='contain'>
@@ -290,6 +320,31 @@ const Main = () => {
         </div>
         
       </div>
+      
+      <div className='cont'>
+        <h2>Our Partners</h2>
+        <Slider {...settings} className='slide'>
+          <div className='img-slide'>
+            <img src= {img13} alt=''/>
+          </div>
+          <div className='img-slide'>
+          <img src= {img14} alt=''/>
+          </div>
+          <div className='img-slide'>
+          <img src= {img15} alt=''/>
+          </div>
+          <div className='img-slide'>
+          <img src= {img16} alt=''/>
+          </div>
+          <div className='img-slide'>
+          <img src= {img17} alt=''/>
+          </div>
+          <div className='img-slide'>
+          <img src= {img18} alt=''/>
+          </div>
+        </Slider>
+      </div>
+      
     </section>
   );
 }

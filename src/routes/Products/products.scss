@@ -56,9 +56,7 @@
         margin: 4rem 6rem;
         
         color: #2a2a2a;
-        h1{
-            font-size: 40px;
-        }
+        
         .content{
             width: 100%;
             display: flex;
@@ -66,16 +64,21 @@
             //margin: 2rem 1rem;
             justify-content: space-between;
             .map{
-                margin-top: 2rem;
+                margin-top: 4rem;
                 margin-left: 2rem;
                 
                 //margin-bottom: 5rem;
             }
 
             .message{
+
                 //right: 0;
                 width: 100%;
                 //margin-left: 10rem;
+                h1{
+                    font-size: 30px;
+                    margin-left: 13rem;
+                }
             }
         }
 
@@ -160,30 +163,35 @@
         // margin-right: 0;
         // m
         //height: 130vh;
-        h1{
-            margin: 1rem;
-            font-size: 20px;
-        }
+        
         .content{
             display: flex;
             flex-direction: column;
             .map{
                 margin-top: 2rem;
-                margin-left: 1rem;
+                margin-left: 2rem;
+                iframe{
+                    width: 90%;
+                    height: 40vh;
+                }
             }
 
             .message{
                 right: 0;
+                h1{
+                    margin: 1rem;
+                    font-size: 25px;
+                }
                 #form{
                     //align-items: center;
-                    margin: 1rem 1rem;
+                    margin: 1.5rem 2rem;
                     padding-bottom: 1rem;
                     width: 295px;
                     height: 60vh;
                     //width:50%;
                     //margin:'auto',
                     //padding:40;
-                    margin-top:20;
+                    //margin-top:20;
                     padding-top:40;
                     box-shadow:0px 0px 10px rgba(0,0,0,0.5);
         

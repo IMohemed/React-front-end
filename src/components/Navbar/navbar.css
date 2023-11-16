@@ -22,9 +22,9 @@
     height: 50rem;
     width: 60%;
     right: -300rem;
-    top: -3rem;
+    top: 3.8rem;
     box-shadow: 0 2px 4px rgba(2, 15, 29, 0.904);
-    transition: 0.8s ease-in-out;
+    transition: 1s ease-in-out;
   }
   .header .navBar .navLists {
     flex-direction: column;
@@ -51,7 +51,6 @@
     color: hsl(187, 85%, 43%);
   }
   .header .activeNavbar {
-    top: 7rem;
     right: 0rem;
   }
 }

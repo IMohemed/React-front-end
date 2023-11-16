@@ -223,7 +223,7 @@
             align-items: center;
             justify-content: center;
             background: rgb(225,225,235);
-            margin-bottom: 12rem;
+            margin-bottom: 6rem;
 
             
             .indicator{
@@ -281,6 +281,16 @@
                 }
             }
         }
+    }
+    .cont{
+        margin-bottom: 10rem;
+        h2{
+            text-align: center;
+        }
+        .slide{
+            margin-top: 2rem;
+        }
+
     }
 }
 
@@ -422,7 +432,7 @@
     }
     .hero{
         width: 100%;
-        height: 90vh;
+        height: 70vh;
         background: rgb(225,225,235);
         border-radius: 1.5rem;
         h1{
@@ -437,8 +447,8 @@
         .contain{
             width: 800px;
             height: 400px;
-            position: relative;
-            margin-top: 20%;
+            position: absolute;
+            margin-top: 15%;
             left: 50%;
             transform: translate(-50%,-50%);
             
@@ -479,6 +489,7 @@
                 }
             }
             .testimonial{
+                margin-top: 4opx;
                 width: 100%;
                 height: 100%;
                 overflow: hidden;
@@ -518,6 +529,7 @@
                     padding: 45px;
                     box-sizing: border-box;
                     z-index: 2;
+                    text-align: start;
                     p{
                         font-size: 18px;
                         line-height: 24px;
@@ -529,6 +541,34 @@
                 }
             }
         }}}
+    }
+    .cont{
+        margin-top: 8rem;
+        margin-bottom: 1rem;
+        
+        h2{
+            text-align: center;
+            font-size: 30px;
+        }
+        .slide{
+            margin: 1rem;
+            padding: 1rem;
+            // background: rgb(225,225,235);
+            // border-radius: .5rem;
+            .slick-next{
+                display: none;
+                
+            }
+
+            .img-slide{
+              //margin-left: 2rem;
+              justify-content: center;
+              img{
+                margin-top: 2rem;
+                padding: 1rem;
+              }
+            }
+        }
     }
 }
 }

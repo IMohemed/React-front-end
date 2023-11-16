@@ -20,6 +20,8 @@
     "react-router-dom": "^6.17.0",
     "react-scripts": "5.0.1",
     "react-scroll-to-top": "^3.0.0",
+    "react-slick": "^0.29.0",
+    "slick-carousel": "^1.8.1",
     "swiper": "^11.0.4",
     "typed.js": "^2.0.16",
     "typewriter-effect": "^2.21.0",
